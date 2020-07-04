@@ -17,6 +17,28 @@
     font-size: 14px;
 }
 
+%linked-text {
+    $link-color-solid: $color-highlight;
+    $link-color-background: rgba($color-highlight, 0.7);
+
+    color: $color-dark;
+    font-weight: $font-weight-medium;
+    border-bottom: 3px solid $link-color-solid;
+    background-image: linear-gradient(transparent 0%, transparent 50%, $link-color-background 50%, $link-color-background 100%);
+    background-size: 100% 200%;
+    background-position: 0 0;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+        background-position: 0 100%;
+    }
+    &:active {
+        background: $color-highlight;
+        border-bottom: 3px solid $color-highlight;
+        color: $color-dark;
+    }
+}
+
 %serif-black {
     font-family: $serif-font;
     font-weight: 800;
