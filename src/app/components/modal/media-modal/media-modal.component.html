@@ -1,0 +1,39 @@
+<div
+    class="open-modal-button"
+    role="button"
+    (click)="openModal()"
+>
+    View
+    <app-svg-icon class="open-modal-icon" name="open-in-new"></app-svg-icon>
+</div>
+
+<div #modal class="modal media-modal" *ngIf="open">
+    <div class="modal-content-container">
+        <div class="modal-top-container">
+            <div class="close-button-container">
+                <div #closeButton role="button" class="close-modal-button" (click)="closeModal()">
+                    Close window<app-svg-icon [name]="'clear-x'" class="close-modal"></app-svg-icon>
+                </div>
+            </div>
+            <p class="correspondence">Correspondence</p>
+            <div class="item-metadata-container">
+                <p class="address"><span class="info-cat">From: </span>{{formatService.name(mediaItem.author) }}</p>
+                <p class="address"><span class="info-cat">To: </span>{{formatService.name(mediaItem.addressee) }}</p>
+                <p class="address"><span class="info-cat">Date: </span>{{formatService.date(mediaItem.date) }}</p>
+            </div>
+        </div>
+        <div class="modal-main-content">
+            <div
+                *ngIf="mediaItem.content.type === 'html'" 
+                [innerHtml]="resourceHtml | safe"
+                class='external-html-container'
+            ></div>
+            <div
+                *ngIf="mediaItem.content.type === 'md'" 
+                [innerHtml]="resourceHtml | safe"
+                class='external-md-container'
+            ></div>
+        </div>
+        <div class="modal-bottom-container"></div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+@import 'vars', 'placeholders';
+$nav-panel-width: 35%;
+
+.app-container {
+    display: flex;
+    height: 100%;
+}
+
+.nav-panel {
+    @extend %fx-column;
+    align-items: center;
+    background: $color-dark;
+    color: $color-light;
+    width: $nav-panel-width;
+    height: 100%;
+    padding: 36px 2%;
+
+    .page-title {
+        margin-top: 30%;
+        @extend %sans-serif-bold;
+        color: $color-white;
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+    }
+
+    .page-subtitle {
+        width: 100%;
+        margin-top: 12px;
+        font-size: 42px;
+        line-height: 1em;
+        padding-bottom: 12px;
+        margin-bottom: 36px;
+        border-bottom: 1px solid $color-white;
+        text-align: center;
+    }
+
+    .section-label {
+        cursor: pointer;
+        display: inline-flex;
+        color: $color-white;
+        @extend %sans-serif-medium;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+        margin-bottom: 20px;
+        width: fit-content;
+        padding: 3px 8px 3px 12px;
+
+        &:hover {
+            transition: 0.2s ease-out;
+            background: rgba(222, 199, 155, 0.2);
+        }
+    }
+
+}
+
+.main-content {
+    background: $color-light-gray;
+    color: $color-dark;
+    overflow-y: scroll;
+    width: 100% - $nav-panel-width;
+    height: 100%;
+    padding: 48px;
+
+    .content-section:not(:first-of-type) {
+        margin-top: 36px;
+    }
+
+    .section-title {
+        @extend %sans-serif-bold;
+        margin-bottom: 12px;
+        border-bottom: 1px solid $color-dark;
+        font-size: 64px;
+    }
+}

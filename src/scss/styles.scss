@@ -1,0 +1,39 @@
+@import 'vars', 'placeholders';
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        h1,
+        h2 {
+            @extend %serif-bold;
+            margin: 0;
+        }
+
+        p {
+            @extend %sans-serif-regular;
+            margin: 0
+        }
+    }
+
+    .section-subheader {
+        @extend %sans-serif-bold;
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    
+    .section-description {
+        @extend %sans-serif-medium;
+        font-size: 20px;
+        margin-bottom: 24px;
+        // letter-spacing: -0.02em;
+    }
+}
