@@ -1,0 +1,26 @@
+@import 'vars', 'placeholders';
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        h1,
+        h2 {
+            @extend %serif-bold;
+            margin: 0;
+        }
+
+        p {
+            @extend %sans-serif-regular;
+            margin: 0
+        }
+    }
+}

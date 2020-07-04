@@ -1,0 +1,32 @@
+<!-- <iframe src="https://severnschool.myschoolapp.com/podium/push/default.aspx?i=352209&s=45&snd=2266f9b7-09f4-402a-b285-ad44cc487ae0" height="100%" width="100%"  target="_self"></iframe> -->
+<div class="actions-container">
+  <table class="actions-table">
+    <thead>
+      <tr class="action-table-header-row">
+        <th>From</th>
+        <th>To</th>
+        <th>Date</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let letter of letters" class="action-table-row">
+        <td>{{ formatService.name(letter.author) }}</td>
+        <td>{{ formatService.name(letter.addressee) }}</td>
+        <td>{{ formatService.date(letter.date) }}</td>
+        <td>
+          <!-- <div class="view-button">View 
+            <app-svg-icon
+              class="view-letter-icon"
+              name="open-in-new"
+            ></app-svg-icon>
+          </div> -->
+          <app-media-modal
+            class="media-modal-button"
+            [mediaItem]="letter"
+          ></app-media-modal>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

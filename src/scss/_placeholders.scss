@@ -1,0 +1,68 @@
+@import 'vars';
+
+%fx-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%fx-column-full-height {
+    @extend %fx-column;
+    height: 100%;
+}
+
+%small-caps-label {
+    @extend %sans-serif-medium;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 14px;
+}
+
+%serif-black {
+    font-family: $serif-font;
+    font-weight: 800;
+}
+
+%serif-bold {
+    font-family: $serif-font;
+    font-weight: 700;
+}
+
+%serif-semi-bold {
+    font-family: $serif-font;
+    font-weight: 600;
+}
+
+%serif-medium {
+    font-family: $serif-font;
+    font-weight: 500;
+}
+
+%serif-regular {
+    font-family: $serif-font;
+    font-weight: 400;
+}
+
+%sans-serif-black {
+    font-family: $sans-serif-font;
+    font-weight: 800;
+}
+
+%sans-serif-bold {
+    font-family: $sans-serif-font;
+    font-weight: 700;
+}
+
+%sans-serif-medium {
+    font-family: $sans-serif-font;
+    font-weight: 500;
+}
+
+%sans-serif-regular {
+    font-family: $serif-font;
+    font-weight: 400;
+}
+
+%sans-serif-light {
+    font-family: $serif-font;
+    font-weight: 300;
+}
