@@ -1,0 +1,6 @@
+@import 'vars', 'placeholders';
+
+.join-link {
+    @extend %linked-text;
+    cursor: pointer;
+}
