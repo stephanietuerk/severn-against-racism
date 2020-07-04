@@ -2,7 +2,20 @@
 
 .actions-container {
     @extend %fx-column;
+}
+
+.view-text {
+    @extend %sans-serif-bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.table-container {
+    @extend %fx-column;
     align-items: center;
+    margin-top: 36px;
 }
 
 .actions-table {
@@ -16,6 +29,7 @@
         text-align: left;
         border-bottom: 1px solid $color-dark;
         padding-bottom: 2px;
+        font-size: 18px;
     }
 
 
@@ -30,8 +44,8 @@
 
     td {
         @extend %serif-regular;
-        font-size: 18px;
-        padding: 6px 36px 6px 0;
+        font-size: 24px;
+        padding: 8px 36px 6px 0;
         border-bottom: 1px dotted $color-dark;
 
         &:last-of-type {
@@ -39,18 +53,20 @@
         }
     }
 
-    .view-button {
+    .open-modal-button {
         display: inline-flex;
-        @extend %sans-serif-medium;
-        font-size: 12px;
+        @extend %sans-serif-bold;
+        font-size: 14px;
         line-height: 18px;
         text-transform: uppercase;
         letter-spacing: 0.2em;
+        position: relative;
+        top: -2px;
     }
 
-    .view-letter-icon svg {
-        height: 14px;
-        width: 14px;
+    .open-modal-icon svg {
+        height: 16px;
+        width: 16px;
         fill: $color-dark;
         margin-left: 6px;
         vertical-align: sub;

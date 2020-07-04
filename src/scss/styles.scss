@@ -23,4 +23,17 @@
             margin: 0
         }
     }
+
+    .section-subheader {
+        @extend %sans-serif-bold;
+        font-size: 30px;
+        margin-bottom: 8px;
+    }
+    
+    .section-description {
+        @extend %sans-serif-medium;
+        font-size: 20px;
+        margin-bottom: 24px;
+        // letter-spacing: -0.02em;
+    }
 }

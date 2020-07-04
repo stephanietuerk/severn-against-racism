@@ -10,18 +10,16 @@
 <div #modal class="modal media-modal" *ngIf="open">
     <div class="modal-content-container">
         <div class="modal-top-container">
-            <div class="container-row">
-                <p class="correspondence">Correspondence</p>
-                <div class="close-button-container">
-                    <div #closeButton role="button" class="close-modal-button" (click)="closeModal()">
-                        Close window<app-svg-icon [name]="'clear-x'" class="close-modal"></app-svg-icon>
-                    </div>
+            <div class="close-button-container">
+                <div #closeButton role="button" class="close-modal-button" (click)="closeModal()">
+                    Close window<app-svg-icon [name]="'clear-x'" class="close-modal"></app-svg-icon>
                 </div>
             </div>
+            <p class="correspondence">Correspondence</p>
             <div class="item-metadata-container">
-                <p class="from"><span class="info-cat">From: </span>{{formatService.name(mediaItem.author) }}</p>
-                <p class="to"><span class="info-cat">To: </span>{{formatService.name(mediaItem.addressee) }}</p>
-                <p class="date"><span class="info-cat">Date: </span>{{formatService.date(mediaItem.date) }}</p>
+                <p class="address"><span class="info-cat">From: </span>{{formatService.name(mediaItem.author) }}</p>
+                <p class="address"><span class="info-cat">To: </span>{{formatService.name(mediaItem.addressee) }}</p>
+                <p class="address"><span class="info-cat">Date: </span>{{formatService.date(mediaItem.date) }}</p>
             </div>
         </div>
         <div class="modal-main-content">

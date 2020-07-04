@@ -1,0 +1,10 @@
+Thank you for your message, and especially for your concern and compassion for Severn School. I can assure you that your interest in the health of the Severn School students and community, particularly during this time of national turmoil, angst and frustration, is without question matched with ours.
+
+As a Diversity and Inclusion professional who also happens to be one of Severn's trustees, I have no problem sharing with you that I believe Doug’s message to the Severn School community on this matter was carefully and thoughtfully worded. I believe it conveyed the right tone and level of content as it was being sent to such a broad community base. In my opinion, the message was delivered at the appropriate level so as to not venture too deeply into details that any might be overlooked or inadvertently omitted, while also demonstrating Severn’s absolute awareness of the very real plight of some of its members. Additionally, I think Doug’s message now appropriately leaves open a more welcomed and anticipated time, place and platform for the depth of such dialogue for and with any members of the community, regardless of how directly or indirectly they may be affected by these ongoing events, and whether they are part of Severn’s African American constituents or not. Finally, as I am fortunate enough to know the heart of the man, Doug’s “struggle” with writing that letter or not had more to do with the delicacy of the matter and not at all to do with any absence of empathy on his part. Simply put, his “struggle” was in wanting to do the right thing, the right way—necessary cautions I agree with fully.
+
+I look forward to our gathering again in the fall as a community as we seek to have worthwhile and constructive dialogue around helping Severn achieve its goals of fostering and being a more diverse and inclusive community. I hope to get to meet and share with you at that time and to our working alongside each other towards this end. Again, truly I thank you for your reaching out and sharing your heart for the Severn School with me.
+
+---
+Regards,
+
+Charles

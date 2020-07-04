@@ -63,14 +63,14 @@ $nav-panel-width: 35%;
     height: 100%;
     padding: 48px;
 
-    .content-section:not(first-of-type) {
+    .content-section:not(:first-of-type) {
         margin-top: 36px;
     }
 
     .section-title {
         @extend %sans-serif-bold;
-        width: 300px;
         margin-bottom: 12px;
         border-bottom: 1px solid $color-dark;
+        font-size: 64px;
     }
 }

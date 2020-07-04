@@ -1,9 +1,11 @@
 
 export class Letter {
+    id: string;
     author: Name;
     addressee: Name;
     date: Date;
     content: Content;
+    response?: string[];
 }
 
 export class Name {

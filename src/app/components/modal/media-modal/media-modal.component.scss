@@ -1,19 +1,5 @@
 @import 'vars', 'placeholders';
 
-.open-modal-button {
-    display: inline-flex;
-    @extend %small-caps-label;
-    font-size: 12px;
-    
-    .open-modal-icon svg {
-        height: 14px;
-        width: 14px;
-        fill: $color-dark;
-        margin-left: 6px;
-        vertical-align: sub;
-    }
-}
-
 .media-modal {
     @extend %fx-column;
     position: fixed;
@@ -41,10 +27,15 @@
         flex-shrink: 0;
     }
 
+    .close-button-container {
+        display: inline-flex;
+        align-self: flex-end;
+    }
+
     .close-modal-button {
         @extend %small-caps-label;
-        // align-self: flex-end;
         margin: 12px 12px 0 0;
+        z-index: 11;
 
         &:hover {
             transition: 0.2 ease-out;
@@ -67,14 +58,24 @@
 
     .correspondence {
         @extend %sans-serif-bold;
-        font-size: 48px;
+        font-size: 108px;
         color: white;
-        margin: 12px 0 12px 36px;
-        line-height: 40px;
+        margin: 36px 0 0 36px;
+        line-height: 4px;
+        position: relative;
+        top: -12px;
     }
 
     .item-metadata-container {
-        margin: 0px 0 12px 36px;
+        margin: 0px 0 6px 36px;
+        z-index: 11;
+        position: relative;
+        top: -8px;
+        
+        .address {
+            font-size: 20px;
+            font-weight: $font-weight-semi-bold;
+        }
 
         .info-cat {
             @extend %small-caps-label;
@@ -92,7 +93,8 @@
             margin: 36px 15% 24px 15%;
 
             p {
-                font-size: 16px;
+                @extend %sans-serif-medium;
+                font-size: 18px;
                 margin-bottom: 14px;
                 letter-spacing: -0.02em;
             }

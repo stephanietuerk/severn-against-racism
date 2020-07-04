@@ -1,32 +1,38 @@
-<!-- <iframe src="https://severnschool.myschoolapp.com/podium/push/default.aspx?i=352209&s=45&snd=2266f9b7-09f4-402a-b285-ad44cc487ae0" height="100%" width="100%"  target="_self"></iframe> -->
 <div class="actions-container">
-  <table class="actions-table">
-    <thead>
-      <tr class="action-table-header-row">
-        <th>From</th>
-        <th>To</th>
-        <th>Date</th>
-        <th></th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let letter of letters" class="action-table-row">
-        <td>{{ formatService.name(letter.author) }}</td>
-        <td>{{ formatService.name(letter.addressee) }}</td>
-        <td>{{ formatService.date(letter.date) }}</td>
-        <td>
-          <!-- <div class="view-button">View 
-            <app-svg-icon
-              class="view-letter-icon"
-              name="open-in-new"
-            ></app-svg-icon>
-          </div> -->
-          <app-media-modal
-            class="media-modal-button"
-            [mediaItem]="letter"
-          ></app-media-modal>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <p class="section-subheader">What's New</p>
+  <div class="correspondence-container">
+    <p class="section-subheader">Correspondence</p>
+    <p class="section-description">This work started with a letter that Doug Lagarde sent to the Severn Community on June 3, 2020. Catalyzed by Headmaster Lagarde's evasiveness on issues of racism in that letter, 
+      many of us sent emails to the school calling not just for a better response to the current moment, but also for serious reflection on numerous reports of racist indicents at the school, and for a plan to develop 
+      a true anti-racist culture at Severn.
+    </p>
+    <p class="section-description">The table below is an attempt to catalog all communications around this issue from the school and to the school, as well as responses from the school in the rare instances in which we 
+      have received them. You can see any corresponance, as well as any response it recieved, by clicking on <span class="view-text">VIEW</span>.
+    </p>
+    <div class="table-container">
+      <table class="actions-table">
+        <thead>
+          <tr class="action-table-header-row">
+            <th>From</th>
+            <th>To</th>
+            <th>Date</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let letter of letters" class="action-table-row">
+            <td>{{ formatService.name(letter.author) }}</td>
+            <td>{{ formatService.name(letter.addressee) }}</td>
+            <td>{{ formatService.date(letter.date) }}</td>
+            <td>
+              <app-media-modal
+                class="media-modal-button"
+                [mediaItem]="letter"
+              ></app-media-modal>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div> 
+  </div>
 </div>
