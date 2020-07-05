@@ -13,24 +13,25 @@ $nav-panel-width: 35%;
     color: $color-light;
     width: $nav-panel-width;
     height: 100%;
-    padding: 36px 2%;
+    padding: 36px 1.4em;
 
     .page-title {
-        margin-top: 30%;
+        margin-top: 35%;
         @extend %sans-serif-bold;
         color: $color-white;
-        font-size: 20px;
+        font-size: 0.8em;
         text-transform: uppercase;
         letter-spacing: 0.2em;
+        text-align: center;
     }
 
     .page-subtitle {
         width: 100%;
-        margin-top: 12px;
-        font-size: 42px;
+        margin-top: 0.3em;
+        font-size: 1.5em;
         line-height: 1em;
-        padding-bottom: 12px;
-        margin-bottom: 36px;
+        padding-bottom: 0.3em;
+        margin-bottom: 1.1em;
         border-bottom: 1px solid $color-white;
         text-align: center;
     }
@@ -40,12 +41,13 @@ $nav-panel-width: 35%;
         display: inline-flex;
         color: $color-white;
         @extend %sans-serif-medium;
-        font-size: 18px;
+        font-size: 0.9em;
         text-transform: uppercase;
         letter-spacing: 0.3em;
-        margin-bottom: 20px;
+        margin-bottom: 0.7em;
         width: fit-content;
-        padding: 3px 8px 3px 12px;
+        padding: 0.1em 0.2em 0.1em 0.4em;
+        text-align: center;
 
         &:hover {
             transition: 0.2s ease-out;
@@ -61,16 +63,17 @@ $nav-panel-width: 35%;
     overflow-y: scroll;
     width: 100% - $nav-panel-width;
     height: 100%;
-    padding: 48px;
+    padding: 2.1em;
 
     .content-section:not(:first-of-type) {
-        margin-top: 36px;
+        margin-top: 1.6em;
     }
 
     .section-title {
         @extend %sans-serif-bold;
-        margin-bottom: 12px;
+        margin-bottom: 0.3em;
+        padding-bottom: 0.05em;
         border-bottom: 1px solid $color-dark;
-        font-size: 64px;
+        font-size: 2.2em;
     }
 }

@@ -11,6 +11,7 @@
         height: 100vh;
         overflow-y: hidden;
         overflow-x: hidden;
+        font-size: calc(0.6em + 1vw);
 
         h1,
         h2 {
@@ -32,8 +33,8 @@
     
     .section-description {
         @extend %sans-serif-medium;
-        font-size: 20px;
-        margin-bottom: 24px;
-        // letter-spacing: -0.02em;
+        font-size: 0.9em;
+        margin-bottom: 1.2em;
+        line-height: 1.3em;
     }
 }
