@@ -106,7 +106,7 @@ export const letters: Letter[] = [
             last: 'Lagarde',
             first: 'Doug'
         },
-        date: new Date('2021-01-01'),
+        date: new Date('2020-06-08'),
         content: {
             type: 'md',
             location: 'sobel001.md'
@@ -122,7 +122,7 @@ export const letters: Letter[] = [
             last: 'Grimes',
             first: 'Carrie'
         },
-        date: new Date('2021-01-01'),
+        date: new Date('2020-06-08'),
         content: {
             type: 'md',
             location: 'sobel002.md'
@@ -189,6 +189,38 @@ export const letters: Letter[] = [
         content: {
             type: 'img',
             location: 'lagarde002.png'
+        }
+    },
+    {
+        id: 'byrd001.md',
+        author: {
+            last: 'Byrd',
+            first: 'Charlotte'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-11'),
+        content: {
+            type: 'md',
+            location: 'byrd001.md'
+        }
+    },
+    {
+        id: 'crawford001.md',
+        author: {
+            last: 'Crawford',
+            first: 'EJ'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-07'),
+        content: {
+            type: 'md',
+            location: 'crawford001.md'
         }
     },
 ];
