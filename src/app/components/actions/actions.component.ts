@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { letters } from 'src/app/constants/letters.constants';
-import { Letter, Name } from 'src/app/models/letter.model';
+import { Letter } from 'src/app/models/letter.model';
 import { FormatService } from 'src/app/core/services/format.service';
-
+import { cloneDeep } from 'lodash';
 
 @Component({
   selector: 'app-actions',
@@ -16,6 +16,15 @@ export class ActionsComponent implements OnInit {
   constructor(public formatService: FormatService) { }
 
   ngOnInit() {
-    this.letters = letters;
+    this.letters = cloneDeep(letters);
+    this.sortLetters();
+  }
+
+  sortLetters() {
+    this.letters.sort(this.sortByDateAscending);
+  }
+
+  sortByDateAscending(a, b) {
+    return a.date - b.date;
   }
 }

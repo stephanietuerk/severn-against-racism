@@ -95,5 +95,100 @@ export const letters: Letter[] = [
             type: 'img',
             location: 'severn001.png'
         }
-    }
+    },
+    {
+        id: 'sobel001',
+        author: {
+            last: 'Sobel',
+            first: 'Dave'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2021-01-01'),
+        content: {
+            type: 'md',
+            location: 'sobel001.md'
+        }
+    },
+    {
+        id: 'sobel002',
+        author: {
+            last: 'Sobel',
+            first: 'Dave'
+        },
+        addressee: {
+            last: 'Grimes',
+            first: 'Carrie'
+        },
+        date: new Date('2021-01-01'),
+        content: {
+            type: 'md',
+            location: 'sobel002.md'
+        }
+    },
+    {
+        id: 'prouty001',
+        author: {
+            last: 'Prouty',
+            first: 'Allison'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-09'),
+        content: {
+            type: 'md',
+            location: 'prouty001.md'
+        }
+    },
+    {
+        id: 'wu001',
+        author: {
+            last: 'Wu',
+            first: 'Joyce'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-08'),
+        content: {
+            type: 'md',
+            location: 'wu001.md'
+        }
+    },
+    {
+        id: 'thompson001.md',
+        author: {
+            last: 'Thompson',
+            first: 'Dominique'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-05'),
+        content: {
+            type: 'md',
+            location: 'thompson001.md'
+        }
+    },
+    {
+        id: 'lagarde002.md',
+        author: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        addressee: {
+            last: 'Alumni, Parents, Faculty, and Staff'
+        },
+        date: new Date('2020-06-12'),
+        content: {
+            type: 'img',
+            location: 'lagarde002.png'
+        }
+    },
 ];

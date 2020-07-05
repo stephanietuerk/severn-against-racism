@@ -12,6 +12,5 @@ It is not too late for Severn to issue an additional statement that demonstrates
 
 In summary, I sincerely hope that Severn is able to make a second statement to its community that states in no uncertain terms its support for Black members of its community, and its commitment to dismantling racism. 
 
-Sincerely,
-
+Sincerely,  
 Stephanie Tuerk
