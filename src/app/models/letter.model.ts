@@ -14,6 +14,6 @@ export class Name {
 }
 
 export class Content {
-    type: 'md' | 'html';
+    type: 'md' | 'img';
     location: string;
 }

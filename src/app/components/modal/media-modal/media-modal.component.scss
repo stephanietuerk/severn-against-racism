@@ -89,6 +89,11 @@
         @extend %fx-column-full-height;
         overflow-y: auto;
 
+        .external-img-container {
+            margin: 36px 15% 24px 15%;
+            text-align: center;
+        }
+
         .external-md-container {
             margin: 36px 15% 24px 15%;
 

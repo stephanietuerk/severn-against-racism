@@ -13,7 +13,7 @@ import * as marked from 'marked';
 })
 export class MediaModalComponent extends ModalComponent implements OnInit {
     @Input() mediaItem: Letter;
-    resourceHtml = '';
+    resource = '';
 
     constructor(private http: HttpClient, public formatService: FormatService) {
       super();
@@ -23,7 +23,7 @@ export class MediaModalComponent extends ModalComponent implements OnInit {
     }
 
     openModal() {
-        this.getResourceHtml();
+        this.getResource();
         super.openModal();
     }
 
@@ -31,20 +31,15 @@ export class MediaModalComponent extends ModalComponent implements OnInit {
         super.closeModal();
     }
 
-    getResourceHtml() {
-        if (this.mediaItem.content.type === 'html') {
-            this.http
-                .get('assets/letters/' + this.mediaItem.content.location,
-                    { responseType: 'text'})
-                .subscribe(data => {
-                    this.resourceHtml = data;
-                });
+    getResource() {
+        if (this.mediaItem.content.type === 'img') {
+            this.resource = 'assets/letters/png/' + this.mediaItem.content.location;
         } else {
             this.http
-                .get('assets/letters/' + this.mediaItem.content.location,
+                .get('assets/letters/md/' + this.mediaItem.content.location,
                     { responseType: 'text'})
                 .subscribe(data => {
-                    this.resourceHtml = marked(data);
+                    this.resource = marked(data);
                 });
         }
     }
