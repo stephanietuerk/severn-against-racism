@@ -12,8 +12,8 @@ export const letters: Letter[] = [
         },
         date: new Date('2020-06-03'),
         content: {
-            type: 'html',
-            location: 'lagarde001.html'
+            type: 'img',
+            location: 'lagarde001.png'
         }
     },
     {
@@ -92,8 +92,8 @@ export const letters: Letter[] = [
         },
         date: new Date('2020-06-08'),
         content: {
-            type: 'html',
-            location: 'severn001.html'
+            type: 'img',
+            location: 'severn001.png'
         }
     }
 ];
