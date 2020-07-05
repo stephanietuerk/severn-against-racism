@@ -4,7 +4,5 @@ As a Diversity and Inclusion professional who also happens to be one of Severn's
 
 I look forward to our gathering again in the fall as a community as we seek to have worthwhile and constructive dialogue around helping Severn achieve its goals of fostering and being a more diverse and inclusive community. I hope to get to meet and share with you at that time and to our working alongside each other towards this end. Again, truly I thank you for your reaching out and sharing your heart for the Severn School with me.
 
----
-Regards,
-
+Regards,  
 Charles

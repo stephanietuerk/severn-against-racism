@@ -8,6 +8,5 @@ I am working with a number of my classmates on a more public response to this. A
 
 But I also wanted to contact you directly, as likely the first Black trustee of Severn and a Diversity and Inclusion professional, to share with you how Mr. Lagarde responded. I am hoping that the Trustees may be able to impress upon Mr. Lagarde the importance of taking a definitive stance against racism, and if he is unable to do so, to have a discussion about whether he is fit to lead the school.
 
-All the best to you in these unthinkable times,
-
+All the best to you in these unthinkable times,  
 Stephanie Tuerk

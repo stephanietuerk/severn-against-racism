@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { timeFormat } from 'd3-time-format';
+import { utcFormat } from 'd3-time-format';
 import { Name } from 'src/app/models/letter.model';
 
 @Injectable({
@@ -10,7 +10,7 @@ export class FormatService {
   constructor() { }
 
   date(date: Date): string {
-      const formatTime = timeFormat('%B %d, %Y');
+      const formatTime = utcFormat('%B %d, %Y');
       return formatTime(date);
   }
 
