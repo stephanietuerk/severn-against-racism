@@ -14,7 +14,7 @@
 .table-container {
     @extend %fx-column;
     align-items: center;
-    margin-top: 36px;
+    margin-top: 2.2em;
 }
 
 .actions-table {
@@ -28,7 +28,7 @@
         letter-spacing: 0.1em;
         text-align: left;
         border-bottom: 1px solid $color-dark;
-        padding-bottom: 2px;
+        padding-bottom: 0.2em;
         font-size: 0.7em;
     }
 
@@ -64,10 +64,10 @@
     }
 
     .open-modal-icon svg {
-        height: 16px;
-        width: 16px;
+        height: 1.2em;
+        width: 1.2em;
         fill: $color-dark;
-        margin-left: 6px;
+        margin-left: 0.4em;
         vertical-align: sub;
     }
 }

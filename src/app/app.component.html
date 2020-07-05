@@ -5,10 +5,12 @@
       Severn Community
     </h1>
     <h2 class="page-subtitle">Standing Against Racism</h2>
-    <div role="button" class="section-label" (click)="scroll(aboutSection)">{{ labels.about }}</div>
-    <div role="button" class="section-label" (click)="scroll(actionsSection)">{{ labels.actions }}</div>
-    <div role="button" class="section-label" (click)="scroll(relatedSection)">{{ labels.related }}</div>
-    <div role="button" class="section-label" (click)="scroll(joinSection)">{{ labels.contact }}</div>
+    <div class="links-container">
+      <div role="button" class="section-label" (click)="scroll(aboutSection)">{{ labels.about }}</div>
+      <div role="button" class="section-label" (click)="scroll(actionsSection)">{{ labels.actions }}</div>
+      <div role="button" class="section-label" (click)="scroll(relatedSection)">{{ labels.related }}</div>
+      <div role="button" class="section-label" (click)="scroll(joinSection)">{{ labels.contact }}</div>
+    </div>
   </div>
   <div class="main-content">
     <section class="content-section" #aboutSection>
