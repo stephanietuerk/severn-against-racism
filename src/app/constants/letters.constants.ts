@@ -76,10 +76,24 @@ export const letters: Letter[] = [
             last: 'Tuerk',
             first: 'Stephanie'
         },
-        date: new Date('2020-07-10'),
+        date: new Date('2020-06-08'),
         content: {
             type: 'md',
             location: 'belo001.md'
+        }
+    },
+    {
+        id: 'severn001',
+        author: {
+            last: 'Severn School'
+        },
+        addressee: {
+            last: 'Alumni'
+        },
+        date: new Date('2020-06-08'),
+        content: {
+            type: 'html',
+            location: 'severn001.html'
         }
     }
 ];
