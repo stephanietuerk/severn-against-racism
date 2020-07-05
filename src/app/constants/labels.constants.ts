@@ -1,8 +1,8 @@
 export const labels = {
     sections: {
-        about: 'About this group',
+        about: 'About Us',
         actions: 'Actions',
-        related: 'Related media',
+        related: 'Media',
         contact: 'Join Us'
     },
     contact: {

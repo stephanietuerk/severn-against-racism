@@ -6,7 +6,7 @@ I am reaching out now as I have already sent an email to Mr. Lagarde which urged
 
 I am working with a number of my classmates on a more public response to this. And I am extremely heartened that so many people in the alumni community feel that Severn needs to take an explicit anti-racist position and vocally affirm its support of the Black members of its community right now. 
 
-But I also wanted to contact you directly, as likely the first Black trustee of Severn and a Diversity and Inclusion professional, to share with you how Mr. Lagarde response. I am hoping that the Trustees may be able to impress upon Mr. Lagarde the importance of taking a definitive stance against racism, and if he is unable to do so, to have a discussion about whether he is fit to lead the school.
+But I also wanted to contact you directly, as likely the first Black trustee of Severn and a Diversity and Inclusion professional, to share with you how Mr. Lagarde responded. I am hoping that the Trustees may be able to impress upon Mr. Lagarde the importance of taking a definitive stance against racism, and if he is unable to do so, to have a discussion about whether he is fit to lead the school.
 
 All the best to you in these unthinkable times,
 
