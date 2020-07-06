@@ -6,8 +6,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
+import { ResourcesComponent } from './components/resources/resources.component';
 import { ActionsComponent } from './components/actions/actions.component';
-import { RelatedComponent } from './components/related/related.component';
 import { JoinComponent } from './components/join/join.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { MediaModalComponent } from './components/modal/media-modal/media-modal.component';
@@ -19,8 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     AboutComponent,
+    ResourcesComponent,
     ActionsComponent,
-    RelatedComponent,
     JoinComponent,
     SvgIconComponent,
     SvgDefinitionsComponent,

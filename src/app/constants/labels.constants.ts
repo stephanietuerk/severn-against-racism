@@ -2,7 +2,7 @@ export const labels = {
     sections: {
         about: 'About Us',
         actions: 'Actions',
-        related: 'Media',
+        resources: 'Resources',
         contact: 'Join Us'
     },
     contact: {

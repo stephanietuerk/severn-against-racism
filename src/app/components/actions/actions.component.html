@@ -1,40 +1,21 @@
-<div class="actions-container">
-  <p class="section-subheader">What's New</p>
-  <div class="correspondence-container">
-    <p class="section-subheader">Correspondence</p>
-    <p class="section-description">This work started with a letter that Doug Lagarde sent to the Severn Community on June 3, 2020. Catalyzed by Headmaster Lagarde's evasiveness on issues of racism in that letter, 
-      many of us sent emails to the school calling not just for a better response to the current moment, but also for serious reflection on numerous reports of racist indicents at the school, and for a plan to develop 
-      a true anti-racist culture at Severn.
-    </p>
-    <p class="section-description">The table below is an attempt to catalog all communications around this issue from the school and to the school, as well as responses from the school in the rare instances in which we 
-      have received them. You can see any corresponance, as well as any response it recieved, by clicking on <span class="view-text">VIEW</span>.
-    </p>
-    <div class="table-container">
-      <table class="actions-table">
-        <thead>
-          <tr class="action-table-header-row">
-            <th>From</th>
-            <th>To</th>
-            <th>Date</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let letter of letters" class="action-table-row">
-            <td>{{ formatService.name(letter.author) }}</td>
-            <td>{{ formatService.name(letter.addressee) }}</td>
-            <td>{{ formatService.date(letter.date) }}</td>
-            <td>
-              <app-media-modal
-                class="media-modal-button"
-                [mediaItem]="letter"
-              ></app-media-modal>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <p class="section-description">If you have written a letter about issues of race at Severn and would like us to host it here, please contact us at <a class="mail-to-link" href="mailto:severnagainstracism.com">SevernAgainstRacism@gmail.com</a>.
-  </p> 
-</div>
+<p class="section-subheader">What's New</p>
+<ul>
+  <li class="section-description">According to remarks from Doug Largarde in an Alumni Zoom call on June 1, 2020, the school will be releasing a plan for action around July 15th. We also know that the Board of Trustees
+    was planning on meeting shortly after that Zoom call to discuss this matter.
+  </li>
+</ul>
+<p class="section-subheader">Our Formation</p>
+<p class="section-description">This group was formed in response to a letter that Headmaster Doug Lagarde shared with the Severn Community on June 3, 2020. 
+  Sent at a time when so many American institutions, from schools to corporations, were communicating support for Black communities, condeming police brutality, 
+  and stating that Black Lives Matter, Mr. Lagarde's email, which did none of these things and mentioned issues of racial injustice only as an aside, made many 
+  of us very concerned about the administration's commitment to Black students and to rooting out racism at the school.
+</p>
+<p class="section-description">A silver lining for many of us was discovering that we were not alone in wanting to see Severn take a strong stand against racism. In response
+  Mr. Lagarde's letter, we wrote an open letter to the school that over 750 alumni, students, parents, and former faculty signed. 
+</p>
+<p class="section-description">
+  Through the discussions that followed Mr. Lagarde's letter and our initial response to it, we heard more and more stories about racist incidents occuring at the school in recent years.
+  Although the impetus for our group was a letter sent around the globe, it is these stories of what is happening inside the school now that are motivating our continued
+  work to get Severn to not only say that Black Lives Matter, but to enact policies and make other requisite changes at the school to suport its Black community. We will know that Severn truly 
+  believes that its Black students matter when we hear from those students and their families that they feel supported and protected. 
+</p>

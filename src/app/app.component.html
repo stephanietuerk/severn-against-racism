@@ -8,7 +8,7 @@
     <div class="links-container">
       <div role="button" class="section-label" (click)="scroll(aboutSection)">{{ labels.about }}</div>
       <div role="button" class="section-label" (click)="scroll(actionsSection)">{{ labels.actions }}</div>
-      <div role="button" class="section-label" (click)="scroll(relatedSection)">{{ labels.related }}</div>
+      <div role="button" class="section-label" (click)="scroll(resourcesSection)">{{ labels.resources }}</div>
       <div role="button" class="section-label" (click)="scroll(joinSection)">{{ labels.contact }}</div>
     </div>
   </div>
@@ -21,9 +21,9 @@
       <h2 class="section-title">{{ labels.actions }}</h2>
       <app-actions></app-actions>
     </section>
-    <section class="content-section" #relatedSection>
-      <h2 class="section-title">{{ labels.related }}</h2>
-      <app-related></app-related>
+    <section class="content-section" #resourcesSection>
+      <h2 class="section-title">{{ labels.resources }}</h2>
+      <app-resources></app-resources>
     </section>
     <section class="content-section" #joinSection id="join-section">
       <h2 class="section-title">{{ labels.contact }}</h2>

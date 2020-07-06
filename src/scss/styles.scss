@@ -19,7 +19,9 @@
             margin: 0;
         }
 
-        p {
+        p,
+        ul,
+        li {
             @extend %sans-serif-regular;
             margin: 0
         }
@@ -27,8 +29,19 @@
 
     .section-subheader {
         @extend %sans-serif-bold;
-        font-size: 30px;
-        margin-bottom: 8px;
+        font-size: 1.25em;
+        margin-bottom: 0.3em;
+
+        &:not(:first-of-type) {
+            margin-top: 1.4em;
+        }
+    }
+
+    .tertiary-header {
+        @extend %sans-serif-medium;
+        font-size: 1em;
+        margin-bottom: 0.2em;
+        margin-top: 0.5em;
     }
     
     .section-description {

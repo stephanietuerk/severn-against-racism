@@ -1,0 +1,80 @@
+@import 'vars', 'placeholders';
+
+.resources-container {
+    @extend %fx-column;
+}
+
+.view-text {
+    @extend %sans-serif-bold;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.table-container {
+    @extend %fx-column;
+    align-items: center;
+    margin-top: 2.2em;
+    margin-bottom: 2em;
+}
+
+.documents-table {
+    color: $color-dark;
+    border-collapse: collapse;
+    width: 100%;
+
+    th {
+        @extend %sans-serif-medium;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: left;
+        border-bottom: 1px solid $color-dark;
+        padding-bottom: 0.2em;
+        font-size: 0.7em;
+    }
+
+
+    .documents-table-row {
+        cursor: pointer;
+
+        &:hover {
+            transition: .2s ease-out;
+            background: rgba(255, 255, 0, 0.7);
+        }
+    }
+
+    td {
+        @extend %serif-regular;
+        font-size: 0.8em;
+        padding: 0.4em 1.4em 0.2em 0;
+        border-bottom: 1px dotted $color-dark;
+
+        &:last-of-type {
+            padding-right: 0.4em;
+        }
+    }
+
+    .open-modal-button {
+        display: inline-flex;
+        @extend %sans-serif-bold;
+        font-size: 0.7em;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        position: relative;
+        top: -0.16em;
+    }
+
+    .open-modal-icon svg {
+        height: 1.2em;
+        width: 1.2em;
+        fill: $color-dark;
+        margin-left: 0.4em;
+        vertical-align: sub;
+    }
+}
+
+.mail-to-link {
+    @extend %linked-text;
+    cursor: pointer;
+    text-decoration: none;
+}
