@@ -223,4 +223,63 @@ export const letters: Letter[] = [
             location: 'crawford001.md'
         }
     },
+    {
+        id: 'scsar001.md',
+        author: {
+            last: 'SCSAR'
+        },
+        addressee: {
+            last: 'Severn School'
+        },
+        date: new Date('2020-06-05'),
+        content: {
+            type: 'img',
+            location: 'scsar001.png'
+        },
+        link: 'https://medium.com/@wessims/severn-school-alumni-affirmation-that-black-lives-matter-an-open-letter-7be0481bb25f',
+        notes: [
+            // tslint:disable-next-line:max-line-length
+            'Although this letter was published through Wes Sims\'s Medium account, it was written collectively by a core group from Severn Community Standing Against Racism'
+        ]
+    },
+    {
+        id: 'scsar002.md',
+        author: {
+            last: 'SCSAR'
+        },
+        addressee: {
+            last: 'Severn School'
+        },
+        date: new Date('2020-06-09'),
+        content: {
+            type: 'img',
+            location: 'scsar002.png'
+        },
+        link: 'https://medium.com/@wessims/severn-leadership-do-better-25253624f83e',
+        notes: [
+            // tslint:disable-next-line:max-line-length
+            'Although the following letter was published through Wes Sims\'s Medium account, it was written collectively by a core group from Severn Community Standing Against Racism'
+        ]
+    },
+    {
+        id: 'ned001',
+        author: {
+            last: 'Ned',
+            first: 'Brionna'
+        },
+        addressee: {
+            last: 'SCSAR / Wes Sims'
+        },
+        date: new Date('2020-06-08'),
+        content: {
+            type: 'img',
+            location: 'ned001.png'
+        },
+        // tslint:disable-next-line:max-line-length
+        link: 'https://medium.com/@ned.brionna/hi-wes-i-am-an-04-grad-and-wanted-to-share-that-i-had-the-opportunity-to-go-back-to-severn-last-fa53ebd369f0',
+        notes: [
+            // tslint:disable-next-line:max-line-length
+            'The following was left as a comment on Severn Community Standing Against Racism\'s Medium post from June 5, 2020'
+        ]
+    }
 ];
