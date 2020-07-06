@@ -6,6 +6,8 @@ export class Letter {
     date: Date;
     content: Content;
     response?: string[];
+    link?: string;
+    notes?: string[];
 }
 
 export class Name {

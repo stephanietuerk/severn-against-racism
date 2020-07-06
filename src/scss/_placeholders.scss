@@ -21,6 +21,7 @@
     $link-color-solid: $color-highlight;
     $link-color-background: rgba($color-highlight, 0.7);
 
+    cursor: pointer;
     color: $color-dark;
     font-weight: $font-weight-medium;
     border-bottom: 3px solid $link-color-solid;

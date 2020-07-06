@@ -15,6 +15,7 @@
     @extend %fx-column;
     align-items: center;
     margin-top: 2.2em;
+    margin-bottom: 2em;
 }
 
 .actions-table {
@@ -70,4 +71,10 @@
         margin-left: 0.4em;
         vertical-align: sub;
     }
+}
+
+.mail-to-link {
+    @extend %linked-text;
+    cursor: pointer;
+    text-decoration: none;
 }

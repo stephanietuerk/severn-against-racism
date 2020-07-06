@@ -23,6 +23,12 @@
             </div>
         </div>
         <div class="modal-main-content">
+            <ng-container *ngIf="mediaItem.notes">
+                <p *ngFor="let note of mediaItem.notes" class="item-note">{{ note }}</p>
+            </ng-container>
+            <ng-container *ngIf="mediaItem.link">
+                <a [href]="mediaItem.link" target="_blank" class="item-link">Click here to see the original verison of this document in a new tab.</a>
+            </ng-container>
             <div
                 *ngIf="mediaItem.content.type === 'img'" 
                 class='external-img-container'
