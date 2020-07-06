@@ -281,5 +281,20 @@ export const letters: Letter[] = [
             // tslint:disable-next-line:max-line-length
             'The following was left as a comment on Severn Community Standing Against Racism\'s Medium post from June 5, 2020'
         ]
+    },
+    {
+        id: 'sims001',
+        author: {
+            last: 'Sims',
+            first: 'Josh'
+        },
+        addressee: {
+            last: 'Severn School'
+        },
+        date: new Date('2020-06-19'),
+        content: {
+            type: 'md',
+            location: 'sims001.md'
+        }
     }
 ];
