@@ -1,0 +1,6 @@
+Dear Mr. Lagarde: 
+
+I understand you’re navigating strong opinions in response to your recent inclusivity correspondence, and that sounds like a tough spot. Most of us, who lead organizations, are in unchartered territory handling this level of anti-racism at work, and it seems easy to take a misstep. Just look at how CrossFit founder and CEO Greg Glassman was forced into early retirement over comments on twitter this week. There is only room for inclusive leaders moving into the future, and I want to see the leader of Severn School remerge successful. Show strong leadership and nurture anti-racism to capture the best version of each student, alumni and of yourself. Following is the correspondence sent in my organization. I wanted you to have it because sometimes it’s helpful to see how other companies are handling things so you can create your own approach. Hope it helps you reconsider your message and reposition yourself to engage in a more productive conversation with alumni, students, parents and donors. 
+
+Good luck,  
+Caroline Cassidy Fornshell ‘95
