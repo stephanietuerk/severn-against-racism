@@ -1,0 +1,25 @@
+<div class="recent-action-container">
+    <p class="date-label">{{ formatService.date(action.date) }}</p>
+    <p class="action-description" *ngFor="let note of action.notes">{{ note }}</p>
+    <ng-container *ngIf="action.image">
+        <div class="action-image-display" (click)="toggleItem(icon)">
+            <div class="toggle-container">
+                <p class="image-toggle-label">{{ action.image.text }}</p>
+                <div
+                    role="button"
+                    class="toggle-button"
+                >
+                    <app-svg-icon
+                        #icon
+                        class="toggle-icon"
+                        [name]="!icon.checked ? 'circle-plus-outline' : 'circle-minus-outline'"
+                    ></app-svg-icon>
+                </div>
+            </div>
+        </div>
+        <div class="displayed-item-container" *ngIf="icon.checked">
+            <img class="displayed-item" [src]="action.image.path">
+        </div>
+    </ng-container>
+    <a *ngIf="action.link" class="action-item-link" [href]="action.link.path" target="_blank">{{ action.link.text }}</a> 
+</div>
