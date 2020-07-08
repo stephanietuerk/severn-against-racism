@@ -36,6 +36,14 @@
   <p class="section-description">If you have written a letter about issues of race at Severn and would like us to host it here, please contact us at <a class="mail-to-link" href="mailto:severnagainstracism.com">SevernAgainstRacism@gmail.com</a>.
   </p>
   <p class="section-subheader">Media</p>
-  <p class="tertiary-header">About Severn</p>
-  <p class="tertiary-header">About Schools Similar to Severn</p> 
+  <div class="severn-media-container">
+    <p class="tertiary-header">
+      About Severn
+    </p>
+    <app-media-item class="severn-media-item" *ngFor="let item of severnMediaItems" [item]="item"></app-media-item>
+  </div>
+  <div class="other-media-container">
+    <p class="tertiary-header">About Schools Similar to Severn</p>
+    <app-media-item class="other-media-item" *ngFor="let item of otherMediaItems" [item]="item"></app-media-item>
+  </div>
 </div>

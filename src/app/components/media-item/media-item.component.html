@@ -1,0 +1,8 @@
+<p class="media-header">
+  <span class="media-date">
+    {{ formatService.date(item.date) }}
+  </span> — <span class="media-source">
+    {{ item.source }}
+  </span>
+</p>
+<a class="title-link" [href]="item.url" target="_blank">{{ item.title }}</a>

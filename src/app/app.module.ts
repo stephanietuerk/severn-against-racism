@@ -13,6 +13,7 @@ import { MediaModalComponent } from './components/modal/media-modal/media-modal.
 import { SafePipe } from './core/pipes/safe.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { RecentActionComponent } from './components/recent-action/recent-action.component';
+import { MediaItemComponent } from './components/media-item/media-item.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { RecentActionComponent } from './components/recent-action/recent-action.
     ModalComponent,
     MediaModalComponent,
     SafePipe,
-    RecentActionComponent
+    RecentActionComponent,
+    MediaItemComponent
   ],
   imports: [
     BrowserModule,

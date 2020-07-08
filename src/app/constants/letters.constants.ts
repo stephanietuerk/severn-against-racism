@@ -296,5 +296,34 @@ export const letters: Letter[] = [
             type: 'md',
             location: 'sims001.md'
         }
-    }
+    },
+    {
+        id: 'severn002',
+        author: {
+            last: 'Severn School',
+        },
+        addressee: {
+            last: 'Severn Community'
+        },
+        date: new Date('2020-07-06'),
+        content: {
+            type: 'md',
+            location: 'severn002.md'
+        }
+    },
+    {
+        id: 'skinner001',
+        author: {
+            last: 'Skinner',
+            first: 'Morgan'
+        },
+        addressee: {
+            last: 'Severn Community'
+        },
+        date: new Date('2020-07-07'),
+        content: {
+            type: 'md',
+            location: 'skinner001.md'
+        }
+    },
 ];
