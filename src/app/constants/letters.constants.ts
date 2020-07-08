@@ -307,8 +307,8 @@ export const letters: Letter[] = [
         },
         date: new Date('2020-07-06'),
         content: {
-            type: 'md',
-            location: 'severn002.md'
+            type: 'img',
+            location: 'severn002.png'
         }
     },
     {
@@ -322,8 +322,8 @@ export const letters: Letter[] = [
         },
         date: new Date('2020-07-07'),
         content: {
-            type: 'md',
-            location: 'skinner001.md'
+            type: 'img',
+            location: 'skinner001.png'
         }
     },
 ];
