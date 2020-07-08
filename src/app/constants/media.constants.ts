@@ -14,6 +14,12 @@ export const severnMedia: Media[] = [
         title: 'Podcast: Josh Sims on Renouncing Severn (Md.) Hall of Fame Induction, Lacrosse\'s Climate, More',
         source: 'Inside Lacrosse',
         date: new Date('2020-06-24')
+    },
+    {
+        url: 'https://www.capitalgazette.com/opinion/letters/ac-ce-letters-2020708-20200707-twivh7dgyjfnnhy34lp7fxnb4y-story.html',
+        title: 'Severn School',
+        source: 'Capital Gazette \(letter by Charlotte Byrd\)',
+        date: new Date('2020-07-06')
     }
 ];
 
