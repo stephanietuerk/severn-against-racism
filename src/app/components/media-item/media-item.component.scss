@@ -1,0 +1,21 @@
+@import 'vars', 'placeholders';
+
+.media-header {
+    @extend %sans-serif-regular;
+    font-size: 0.7em;
+    .media-date {
+    }
+    
+    .media-source {
+        text-transform: uppercase;
+
+        letter-spacing: 0.1em;
+    }
+}
+
+.title-link {
+    @extend %sans-serif-medium;
+    @extend %linked-text;
+    font-size: 0.8em;
+    text-decoration: none;
+}

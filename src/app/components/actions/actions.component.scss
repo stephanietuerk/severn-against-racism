@@ -1,0 +1,9 @@
+@import 'vars', 'placeholders';
+
+app-recent-action {
+    display: block;
+    
+    &:not(:last-of-type) {
+        margin-bottom: 2.2em;
+    }
+}

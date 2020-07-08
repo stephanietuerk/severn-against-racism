@@ -2,7 +2,6 @@ import { SvgDefinitionsComponent } from './core/svg-icon/svg-definitions.compone
 import { SvgIconComponent } from './core/svg-icon/svg-icon.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
@@ -13,6 +12,8 @@ import { ModalComponent } from './components/modal/modal.component';
 import { MediaModalComponent } from './components/modal/media-modal/media-modal.component';
 import { SafePipe } from './core/pipes/safe.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { RecentActionComponent } from './components/recent-action/recent-action.component';
+import { MediaItemComponent } from './components/media-item/media-item.component';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ import { HttpClientModule } from '@angular/common/http';
     SvgDefinitionsComponent,
     ModalComponent,
     MediaModalComponent,
-    SafePipe
+    SafePipe,
+    RecentActionComponent,
+    MediaItemComponent
   ],
   imports: [
     BrowserModule,

@@ -3,6 +3,9 @@ import { letters } from 'src/app/constants/letters.constants';
 import { Letter } from 'src/app/models/letter.model';
 import { FormatService } from 'src/app/core/services/format.service';
 import { cloneDeep } from 'lodash';
+import { SortService } from 'src/app/core/services/sort.service';
+import { Media } from 'src/app/models/media.model';
+import { severnMedia, otherMedia } from 'src/app/constants/media.constants';
 
 @Component({
   selector: 'app-resources',
@@ -12,19 +15,25 @@ import { cloneDeep } from 'lodash';
 })
 export class ResourcesComponent implements OnInit {
   letters: Letter[];
+  severnMediaItems: Media[];
+  otherMediaItems: Media[];
 
-  constructor(public formatService: FormatService) { }
+  constructor(public formatService: FormatService, private sortService: SortService) { }
 
   ngOnInit() {
     this.letters = cloneDeep(letters);
-    this.sortLetters();
+    this.severnMediaItems = cloneDeep(severnMedia);
+    this.otherMediaItems = cloneDeep(otherMedia);
+    this.sortByDateAscending(this.letters);
+    this.sortByDateDescending(this.severnMediaItems);
+    this.sortByDateDescending(this.otherMediaItems);
   }
 
-  sortLetters() {
-    this.letters.sort(this.sortByDateAscending);
+  sortByDateAscending(arr: any) {
+    arr.sort(this.sortService.sortByDateAscending);
   }
 
-  sortByDateAscending(a, b) {
-    return a.date - b.date;
+  sortByDateDescending(arr: any) {
+    arr.sort(this.sortService.sortByDateDescending);
   }
 }
