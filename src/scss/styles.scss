@@ -38,8 +38,8 @@
     }
 
     .tertiary-header {
-        @extend %sans-serif-medium;
-        font-size: 1em;
+        @extend %sans-serif-bold;
+        font-size: 0.9em;
         margin-bottom: 0.2em;
         margin-top: 0.5em;
     }

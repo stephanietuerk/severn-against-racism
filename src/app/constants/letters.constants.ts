@@ -296,5 +296,144 @@ export const letters: Letter[] = [
             type: 'md',
             location: 'sims001.md'
         }
-    }
+    },
+    {
+        id: 'severn002',
+        author: {
+            last: 'Severn School',
+        },
+        addressee: {
+            last: 'Severn Community'
+        },
+        date: new Date('2020-07-06'),
+        content: {
+            type: 'img',
+            location: 'severn002.png'
+        }
+    },
+    {
+        id: 'skinner001',
+        author: {
+            last: 'Skinner',
+            first: 'Morgan'
+        },
+        addressee: {
+            last: 'Severn Community'
+        },
+        date: new Date('2020-07-07'),
+        content: {
+            type: 'img',
+            location: 'skinner001.png'
+        }
+    },
+    {
+        id: 'weiner001',
+        author: {
+            last: 'Weiner',
+            first: 'Michelle'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-08'),
+        content: {
+            type: 'md',
+            location: 'weiner001.md'
+        }
+    },
+    {
+        id: 'maconi001',
+        author: {
+            last: 'Maconi',
+            first: 'Caryn'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-08'),
+        content: {
+            type: 'md',
+            location: 'maconi001.md'
+        }
+    },
+    {
+        id: 'limon001',
+        author: {
+            last: 'Limon',
+            first: 'Evalyse'
+        },
+        addressee: {
+            last: 'Severn Board of Trustees'
+        },
+        date: new Date('2020-07-06'),
+        content: {
+            type: 'md',
+            location: 'limon001.md'
+        }
+    },
+    {
+        id: 'limon001',
+        author: {
+            last: 'Limon',
+            first: 'Evalyse'
+        },
+        addressee: {
+            last: 'Grimes',
+            first: 'Carrie'
+        },
+        date: new Date('2020-06-05'),
+        content: {
+            type: 'md',
+            location: 'limon002.md'
+        }
+    },
+    {
+        id: 'wu002',
+        author: {
+            last: 'Wu',
+            first: 'Joyce'
+        },
+        addressee: {
+            last: 'Severn Board of Trustees'
+        },
+        date: new Date('2020-07-08'),
+        content: {
+            type: 'md',
+            location: 'wu002.md'
+        }
+    },
+    {
+        id: 'farrell001',
+        author: {
+            last: 'Farrell',
+            first: 'Drew'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-07'),
+        content: {
+            type: 'md',
+            location: 'farrell001.md'
+        }
+    },
+    {
+        id: 'fornshell001',
+        author: {
+            last: 'Fornshell',
+            first: 'Caroline Cassidy'
+        },
+        addressee: {
+            last: 'Lagarde',
+            first: 'Doug'
+        },
+        date: new Date('2020-06-010'),
+        content: {
+            type: 'md',
+            location: 'fornshell001.md'
+        }
+    },
 ];

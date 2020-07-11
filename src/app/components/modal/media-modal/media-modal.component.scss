@@ -106,13 +106,16 @@
             font-size: 0.7em;
             text-transform: uppercase;
             letter-spacing: 0.08em;
-            font-weight: 500;
             text-decoration: none;
             align-self: flex-start;
         }
 
         .external-img-container {
             margin: 36px 15% 24px 15%;
+            
+            .img-resource {
+                max-width: 150%;
+            }
         }
 
         .external-md-container {
@@ -121,8 +124,8 @@
             p,
             li {
                 @extend %sans-serif-medium;
-                font-size: 18px;
-                margin-bottom: 14px;
+                font-size: 0.8em;
+                margin-bottom: 0.8em;
                 letter-spacing: -0.02em;
             }
 

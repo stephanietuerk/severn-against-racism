@@ -1,0 +1,24 @@
+@import 'vars', 'placeholders';
+
+.contact-item {
+    margin-bottom: 0.8em;
+
+    .contact-label {
+        @extend %sans-serif-medium;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        letter-spacing: 0.15em;
+    }
+
+    .contact-link {
+        display: inline;
+        @extend %linked-text;
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+
+    .contact-span {
+        display: inline;
+        font-size: 0.7em;
+    }
+}

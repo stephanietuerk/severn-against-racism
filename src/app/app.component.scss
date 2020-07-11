@@ -1,113 +1,116 @@
-@import 'vars', 'placeholders';
+@import "vars", "placeholders";
 $nav-panel-width: 35%;
 
 .app-container {
-    display: flex;
-    height: 100%;
+  display: flex;
+  height: 100%;
 
-    @media (max-width: 700px) {
-        flex-direction: column;
-    }
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 }
 
 .nav-panel {
-    @extend %fx-column;
-    align-items: center;
-    background: $color-dark;
-    color: $color-light;
-    width: $nav-panel-width;
-    height: 100%;
-    padding: 1.8em 1.4em;
+  @extend %fx-column;
+  align-items: center;
+  background: $color-dark;
+  color: $color-light;
+  width: $nav-panel-width;
+  height: 100%;
+  padding: 1.8em 1.4em;
+
+  @media (max-width: 700px) {
+    width: 100%;
+    height: auto;
+    padding: 0.6em 1.4em;
+  }
+
+  .page-title {
+    margin-top: 35%;
+    @extend %sans-serif-bold;
+    color: $color-white;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
 
     @media (max-width: 700px) {
-        width: 100%;
-        height: auto;
-        padding: 0.6em 1.4em;
+      margin-top: 0;
+    }
+  }
+
+  .page-subtitle {
+    width: 100%;
+    margin-top: 0.3em;
+    font-size: 1.5em;
+    line-height: 1em;
+    padding-bottom: 0.3em;
+    border-bottom: 1px solid $color-white;
+    text-align: center;
+  }
+
+  .links-container {
+    @extend %fx-column;
+    align-items: center;
+    margin-top: 1.8em;
+
+    @media (max-width: 700px) {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 0.4em;
+    }
+  }
+
+  .section-label {
+    cursor: pointer;
+    display: inline-flex;
+    color: $color-white;
+    @extend %sans-serif-medium;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    margin-bottom: 0.7em;
+    width: fit-content;
+    padding: 0.1em 0.2em 0.1em 0.4em;
+    text-align: center;
+
+    &:hover {
+      transition: 0.2s ease-out;
+      background: rgba(222, 199, 155, 0.2);
     }
 
-    .page-title {
-        margin-top: 35%;
-        @extend %sans-serif-bold;
-        color: $color-white;
-        font-size: 0.8em;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        text-align: center;
-
-        @media (max-width: 700px) {
-            margin-top: 0;
-        }
+    @media (max-width: 700px) {
+      margin-bottom: 0;
     }
 
-    .page-subtitle {
-        width: 100%;
-        margin-top: 0.3em;
-        font-size: 1.5em;
-        line-height: 1em;
-        padding-bottom: 0.3em;
-        border-bottom: 1px solid $color-white;
-        text-align: center;
+    @media (max-width: 500px) {
+      font-size: 0.8em;
     }
-
-    .links-container {
-        @extend %fx-column;
-        align-items: center;
-        margin-top: 1.8em;
-
-        @media (max-width: 700px) {
-            flex-direction: row;
-            width: 100%;
-            justify-content: space-between;
-            margin-top: 0.4em;
-        }
-    }
-
-    .section-label {
-        cursor: pointer;
-        display: inline-flex;
-        color: $color-white;
-        @extend %sans-serif-medium;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        letter-spacing: 0.3em;
-        margin-bottom: 0.7em;
-        width: fit-content;
-        padding: 0.1em 0.2em 0.1em 0.4em;
-        text-align: center;
-
-        &:hover {
-            transition: 0.2s ease-out;
-            background: rgba(222, 199, 155, 0.2);
-        }
-
-        @media (max-width: 700px) {
-            margin-bottom: 0;
-        }
-    }
-
+  }
 }
 
 .main-content {
-    background: $color-light-gray;
-    color: $color-dark;
-    overflow-y: scroll;
-    width: 100% - $nav-panel-width;
-    height: 100%;
-    padding: 2.1em;
+  background: $color-light-gray;
+  color: $color-dark;
+  overflow-y: scroll;
+  width: 100% - $nav-panel-width;
+  height: 100%;
+  padding: 2.1em;
 
-    @media (max-width: 700px) {
-        width: 100%;
-    }
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 
-    .content-section:not(:first-of-type) {
-        margin-top: 1.6em;
-    }
+  .content-section:not(:first-of-type) {
+    margin-top: 1.6em;
+  }
 
-    .section-title {
-        @extend %sans-serif-bold;
-        margin-bottom: 0.3em;
-        padding-bottom: 0.05em;
-        border-bottom: 1px solid $color-dark;
-        font-size: 2.2em;
-    }
+  .section-title {
+    @extend %sans-serif-bold;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.05em;
+    border-bottom: 1px solid $color-dark;
+    font-size: 2.2em;
+  }
 }

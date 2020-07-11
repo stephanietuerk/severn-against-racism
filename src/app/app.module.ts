@@ -12,7 +12,12 @@ import { ModalComponent } from './components/modal/modal.component';
 import { MediaModalComponent } from './components/modal/media-modal/media-modal.component';
 import { SafePipe } from './core/pipes/safe.pipe';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 import { NavPanelComponent } from './components/nav-panel/nav-panel.component';
+=======
+import { RecentActionComponent } from './components/recent-action/recent-action.component';
+import { MediaItemComponent } from './components/media-item/media-item.component';
+>>>>>>> 1d3eb93ece28a07ba9bbc595e33244c81c9269e6
 
 
 @NgModule({
@@ -27,7 +32,9 @@ import { NavPanelComponent } from './components/nav-panel/nav-panel.component';
     SvgDefinitionsComponent,
     ModalComponent,
     MediaModalComponent,
-    SafePipe
+    SafePipe,
+    RecentActionComponent,
+    MediaItemComponent
   ],
   imports: [
     BrowserModule,
