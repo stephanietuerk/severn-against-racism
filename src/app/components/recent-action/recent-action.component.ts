@@ -26,7 +26,7 @@ export class RecentActionComponent implements OnInit {
         tempInput.style.position = 'absolute'; 
         tempInput.style.left = '-1000px'; 
         tempInput.style.top = '-1000px';
-        tempInput.value = `www.severncommunityagainstracism.com/#${this.action.id}`;
+        tempInput.value = `severncommunityagainstracism.com/#${this.action.id}`;
         document.body.appendChild(tempInput);
         tempInput.select();
         document.execCommand('copy');
