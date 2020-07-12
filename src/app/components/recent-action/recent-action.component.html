@@ -1,4 +1,4 @@
-<div class="recent-action-container" id="action.id">
+<div class="recent-action-container" [id]="action.id">
     <div class="date-row" (click)="copyLink()">
         <p class="date-label">{{ formatService.date(action.date) }}</p>
         <div class="copy-link-button" role="button">
