@@ -1,6 +1,4 @@
 @import "vars", "placeholders";
-$nav-panel-width: 35%;
-
 .app-container {
   display: flex;
   height: 100%;
@@ -63,6 +61,7 @@ $nav-panel-width: 35%;
   }
 
   .section-label {
+    margin: 0;
     cursor: pointer;
     display: inline-flex;
     color: $color-white;

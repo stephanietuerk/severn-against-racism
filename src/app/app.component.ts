@@ -7,13 +7,9 @@ import { labels } from './constants/labels.constants';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  labels;
+  sections;
 
   ngOnInit() {
-    this.labels = labels.sections;
-  }
-
-  scroll(element: any) {
-    element.scrollIntoView({ behavior: 'smooth'});
+    this.sections = labels.sections;
   }
 }
