@@ -24,7 +24,7 @@ export const actions: Action[] = [
     date: new Date('2020-07-08'),
     notes: [
       // tslint:disable-next-line:max-line-length
-      'Severn alum Aidan Wang \'18 released an extensive policy memo detailing ways for the Severn to support students of color and implement anti-racist learning.',
+      'Severn alum Aidan Wang \'18 released an extensive policy memo detailing ways for Severn to support students of color and implement anti-racist learning.',
       'The memo recounts further incidents of racism at the school and recommends actions so that Severn\'s Mission and Inclusion statements can cease being mere words on paper and become lived experience for students at the school.',
       'Jane Huang, Yasmeen Meek, Katie Dubinski, Jorryn Avery, and Courtney Freeman, all class of 2018, contributed to the document.'
     ],
