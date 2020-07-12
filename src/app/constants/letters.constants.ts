@@ -430,10 +430,26 @@ export const letters: Letter[] = [
             last: 'Lagarde',
             first: 'Doug'
         },
-        date: new Date('2020-06-010'),
+        date: new Date('2020-06-10'),
         content: {
             type: 'md',
             location: 'fornshell001.md'
         }
+    },
+    {
+        id: 'wang001',
+        author: {
+            last: 'Wang et al.',
+            first: 'Aidan'
+        },
+        addressee: {
+            last: 'Severn School'
+        },
+        date: new Date('2020-07-11'),
+        content: {
+            type: 'pdf',
+            location: 'SevernSchoolPolicyMemo.pdf'
+        },
+        notes: ['This memo was written in conjunction with Jane Huang, Yasmeen Meek, Katie Dubinski, Jorryn Avery, and Courtney Freeman, all class of 2018']
     },
 ];

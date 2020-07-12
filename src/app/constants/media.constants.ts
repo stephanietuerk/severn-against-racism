@@ -20,6 +20,12 @@ export const severnMedia: Media[] = [
         title: 'Severn School',
         source: 'Capital Gazette \(letter by Charlotte Byrd\)',
         date: new Date('2020-07-06')
+    },
+    {
+        url: 'https://www.capitalgazette.com/education/ac-cn-severn-school-black-students-20200711-boudrkxxbja33photw4lhnmegq-story.html',
+        title: 'Painful experiences of Black students at Severn School span generations',
+        source: 'Capital Gazette',
+        date: new Date('2020-07-11')
     }
 ];
 

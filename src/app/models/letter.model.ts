@@ -16,6 +16,6 @@ export class Name {
 }
 
 export class Content {
-    type: 'md' | 'img';
+    type: 'md' | 'img' | 'pdf';
     location: string;
 }

@@ -31,9 +31,9 @@
               "src/scss/styles.scss"
             ],
             "stylePreprocessorOptions": {
-                "includePaths": [
-                  "src/scss"
-                ]
+              "includePaths": [
+                "src/scss"
+              ]
             },
             "scripts": [],
             "es5BrowserSupport": true
@@ -146,5 +146,8 @@
       }
     }
   },
-  "defaultProject": "severn-anti-racism"
+  "defaultProject": "severn-anti-racism",
+  "cli": {
+    "analytics": "b4ae797e-8419-4f31-bfee-f4280569765e"
+  }
 }

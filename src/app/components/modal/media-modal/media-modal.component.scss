@@ -73,8 +73,8 @@
         top: -8px;
         
         .address {
+            @extend %serif-semi-bold;
             font-size: 20px;
-            font-weight: $font-weight-semi-bold;
         }
 
         .info-cat {

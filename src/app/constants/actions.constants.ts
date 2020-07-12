@@ -2,6 +2,40 @@ import { Action } from "./../models/action.model";
 
 export const actions: Action[] = [
   {
+    id: 'capital-20200711',
+    date: new Date('2020-07-11'),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      "The Capital-Gazatte published an article on painful experiences of Black students at Severn from the 1990s until present.",
+    ],
+    link: {
+      text: "Read the article on the Capital-Gazette's site",
+      path:
+        "https://www.capitalgazette.com/education/ac-cn-severn-school-black-students-20200711-boudrkxxbja33photw4lhnmegq-story.html",
+    },
+    image: {
+      text: "View the article",
+      path: "assets/letters/png/capital001.png",
+      type: 'img'
+    },
+  },
+  {
+    id: 'wang-20200708',
+    date: new Date('2020-07-08'),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      'Severn alum Aidan Wang \'18 released an extensive policy memo detailing ways for the Severn to support students of color and implement anti-racist learning.',
+      'The memo recounts further incidents of racism at the school and recommends actions so that Severn\'s Mission and Inclusion statements can cease being mere words on paper and become lived experience for students at the school.',
+      'Jane Huang, Yasmeen Meek, Katie Dubinski, Jorryn Avery, and Courtney Freeman, all class of 2018, contributed to the document.'
+    ],
+    image: {
+      text: "View the memo",
+      path: "assets/letters/pdf/SevernSchoolPolicyMemo.pdf",
+      type: 'pdf'
+    }
+  },
+  {
+    id: 'skinner-20200707',
     date: new Date("2020-07-07"),
     notes: [
       // tslint:disable-next-line:max-line-length
@@ -15,9 +49,11 @@ export const actions: Action[] = [
     image: {
       text: "View her letter",
       path: "assets/letters/png/skinner001.png",
+      type: 'img'
     },
   },
   {
+    id: 'severn-20200706',
     date: new Date("2020-07-06"),
     notes: [
       // tslint:disable-next-line:max-line-length
@@ -31,6 +67,7 @@ export const actions: Action[] = [
     image: {
       text: "View the school's letter",
       path: "assets/letters/png/severn002.png",
+      type: 'img'
     },
   },
 ];

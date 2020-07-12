@@ -4,19 +4,44 @@
     @extend %sans-serif-regular;
     @extend %fx-column;
     align-items: flex-start;
-    margin-top: 0.8em;
 
-    .date-label {
-        display: inline-flex;
-        font-weight: $font-weight-bold;
-        font-size: 0.8em;
+    .date-row {
+        display: flex;
+        align-items: middle;
+
+        .date-label {
+            display: inline-flex;
+            font-weight: $font-weight-bold;
+            font-size: 0.8em;
+            padding-top: 0.15vw;
+        }
+
+        .link-icon svg {
+            display: block;
+            margin-left: 0.5em;
+            $size: calc(0.65em + 0.85vw);
+            fill: $color-dark;
+            height: $size;
+            width: $size;
+
+            &:hover {
+                transition: 0.3s ease-out;
+                fill: rgba($color-highlight, 1);
+            }
+        }
     }
+
 
     .action-description {
         @extend %serif-medium;
         margin-top: 0.4em;
         font-size: 0.9em;
-        line-height: 1.3em;;
+        line-height: 1.3em;
+
+        &:not(:first-of-type) {
+            font-size: 0.7em;
+            font-weight: $font-weight-regular;
+        }
     }
 
     .action-item-link {
@@ -37,7 +62,8 @@
             margin: 0.6em 0 0.2em 0;
 
             &:hover {
-                background: $color-highlight;
+                transition: 0.3s ease-out;
+                background: rgba($color-highlight, 0.7);
             }
         }
    

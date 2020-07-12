@@ -1,11 +1,11 @@
-export const labels = {
-    sections: {
-        about: 'About Us',
-        actions: 'Actions',
-        resources: 'Resources',
-        contact: 'Join Us'
-    },
-    contact: {
-        email: 'SevernAgainstRacism@gmail.com'
-    }
+import { Labels } from '../models/labels.model';
+
+export const labels: Labels = {
+    sections: [
+        { id: 'about', display: 'About Us' },
+        { id: 'actions', display: 'Actions' },
+        { id: 'resources', display: 'Resources' },
+        { id: 'join', display: 'Join Us' },
+    ]
 };
+

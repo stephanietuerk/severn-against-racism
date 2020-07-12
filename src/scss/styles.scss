@@ -31,10 +31,6 @@
         @extend %sans-serif-bold;
         font-size: 1.25em;
         margin-bottom: 0.3em;
-
-        &:not(:first-of-type) {
-            margin-top: 1.4em;
-        }
     }
 
     .tertiary-header {

@@ -1,33 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="app-container">
-  <div class="nav-panel">
-    <h1 class="page-title">
-      Severn Community
-    </h1>
-    <h2 class="page-subtitle">Standing Against Racism</h2>
-    <div class="links-container">
-      <div role="button" class="section-label" (click)="scroll(aboutSection)">{{ labels.about }}</div>
-      <div role="button" class="section-label" (click)="scroll(actionsSection)">{{ labels.actions }}</div>
-      <div role="button" class="section-label" (click)="scroll(resourcesSection)">{{ labels.resources }}</div>
-      <div role="button" class="section-label" (click)="scroll(joinSection)">{{ labels.contact }}</div>
-    </div>
-  </div>
-  <div class="main-content">
-    <section class="content-section" #aboutSection>
-      <h2 class="section-title">{{ labels.about }}</h2>
-      <app-about></app-about>
-    </section>
-    <section class="content-section" #actionsSection>
-      <h2 class="section-title">{{ labels.actions }}</h2>
-      <app-actions></app-actions>
-    </section>
-    <section class="content-section" #resourcesSection>
-      <h2 class="section-title">{{ labels.resources }}</h2>
-      <app-resources></app-resources>
-    </section>
-    <section class="content-section" #joinSection id="join-section">
-      <h2 class="section-title">{{ labels.contact }}</h2>
-      <app-join></app-join>
+  <app-nav-panel></app-nav-panel>
+  <div class="main-content" id="main-content">
+    <section *ngFor="let section of sections" class="content-section" [id]="section.id">
+      <h2 class="section-title">{{ section.display }}</h2>
+      <app-about *ngIf="section.id === 'about'"></app-about>
+      <app-actions *ngIf="section.id === 'actions'"></app-actions>
+      <app-resources *ngIf="section.id === 'resources'"></app-resources>
+      <app-join *ngIf="section.id === 'join'"></app-join>
     </section>
   </div>
 </div>

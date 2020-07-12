@@ -28,6 +28,7 @@
     "express": "^4.17.1",
     "lodash": "^4.17.19",
     "marked": "^1.1.0",
+    "ng2-pdf-viewer": "^6.3.2",
     "rxjs": "~6.6.0",
     "tslib": "^1.10.0",
     "typescript": "~3.8.3",

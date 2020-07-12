@@ -3,6 +3,17 @@
 .resources-container {
     @extend %fx-column;
 
+    .section-subheader.resources {
+        margin-top: 2em;
+        &:nth-of-type(1) {
+            margin-top: 0;
+        }
+    }
+
+    .section-description.resources {
+        margin-bottom: 0;
+    }
+
     .view-text {
         @extend %sans-serif-bold;
         font-size: 0.7em;

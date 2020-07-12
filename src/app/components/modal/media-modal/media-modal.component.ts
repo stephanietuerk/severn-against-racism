@@ -34,13 +34,15 @@ export class MediaModalComponent extends ModalComponent implements OnInit {
     getResource() {
         if (this.mediaItem.content.type === 'img') {
             this.resource = 'assets/letters/png/' + this.mediaItem.content.location;
-        } else {
+        } else if (this.mediaItem.content.type === 'md') {
             this.http
                 .get('assets/letters/md/' + this.mediaItem.content.location,
                     { responseType: 'text'})
                 .subscribe(data => {
                     this.resource = marked(data);
                 });
+        } else if (this.mediaItem.content.type === 'pdf') {
+            this.resource = 'assets/letters/pdf/' + this.mediaItem.content.location;
         }
     }
 }

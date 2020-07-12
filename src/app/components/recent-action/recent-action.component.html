@@ -1,5 +1,10 @@
-<div class="recent-action-container">
-    <p class="date-label">{{ formatService.date(action.date) }}</p>
+<div class="recent-action-container" id="action.id">
+    <div class="date-row" (click)="copyLink()">
+        <p class="date-label">{{ formatService.date(action.date) }}</p>
+        <div class="copy-link-button" role="button">
+            <app-svg-icon class="link-icon" name="link"></app-svg-icon>
+        </div>
+    </div>
     <p class="action-description" *ngFor="let note of action.notes">{{ note }}</p>
     <ng-container *ngIf="action.image">
         <div class="action-image-display" (click)="toggleItem(icon)">
@@ -17,8 +22,15 @@
                 </div>
             </div>
         </div>
-        <div class="displayed-item-container" *ngIf="icon.checked">
-            <img class="displayed-item" [src]="action.image.path">
+        <div class="displayed-item-container" id="displayed-item-container" *ngIf="icon.checked">
+            <img *ngIf="action.image.type === 'img'" class="displayed-item" [src]="action.image.path">
+            <pdf-viewer 
+                *ngIf="action.image.type === 'pdf'"
+                class="displayed-item"
+                [src]="action.image.path"
+                [render-text]="true"
+                style="display: block;">
+            </pdf-viewer>
         </div>
     </ng-container>
     <a *ngIf="action.link" class="action-item-link" [href]="action.link.path" target="_blank">{{ action.link.text }}</a> 

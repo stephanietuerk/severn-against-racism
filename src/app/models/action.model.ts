@@ -1,4 +1,5 @@
 export class Action {
+    id: string;
     date: Date;
     notes: string[];
     link?: Link;
@@ -8,4 +9,5 @@ export class Action {
 export class Link {
     text: string;
     path: string;
+    type?: string;
 }
