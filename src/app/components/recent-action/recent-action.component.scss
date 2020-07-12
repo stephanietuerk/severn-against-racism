@@ -86,7 +86,7 @@
         }
         
         .toggle-icon svg {
-            $size: calc(0.45em + 1vw);
+            $size: calc(0.45em + 0.8vw);
             vertical-align: middle;
             fill: $color-dark;
             height: $size;
