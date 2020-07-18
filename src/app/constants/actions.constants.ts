@@ -70,4 +70,30 @@ export const actions: Action[] = [
       type: "img",
     },
   },
+  {
+    id: "scsar-20200716",
+    date: new Date("2020-07-16"),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      'Severn Community Standing Against Racism sent a letter to Severn\'s Board of Trustees and Head of School Doug Lagarde calling for promised policies to be put in place before the start of the \'20-\'21 school year and recommending members of the Severn community to serve on the DEI Committee.',
+    ],
+    image: {
+      text: "View our letter",
+      path: "assets/letters/md/scsar003.md",
+      type: "md",
+    },
+  },
+  {
+    id: "ssbaa-20200716",
+    date: new Date("2020-07-16"),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      'The newly-formed Severn School Black Alumni Association (SSBAA) sent a letter to Severn\'s Board of Trustees and Head of School Doug Lagarde requesting public recognition from the school, inclusion on the proposed DEI Committee, and engagement from the school to facilitate meaningful connection between SSBAA and current Black students.',
+    ],
+    image: {
+      text: "View SSBAA's letter",
+      path: "assets/letters/md/ssbaa001.md",
+      type: "md",
+    },
+  },
 ];
