@@ -27,10 +27,15 @@
             <pdf-viewer 
                 *ngIf="action.image.type === 'pdf'"
                 class="displayed-item"
-                [src]="action.image.path"
+                [src]="displayItem"
                 [render-text]="true"
                 style="display: block;">
             </pdf-viewer>
+            <div
+                *ngIf="action.image.type === 'md'" 
+                [innerHtml]="displayItem | safe"
+                class='external-md-container'
+            ></div>
         </div>
     </ng-container>
     <a *ngIf="action.link" class="action-item-link" [href]="action.link.path" target="_blank">{{ action.link.text }}</a> 

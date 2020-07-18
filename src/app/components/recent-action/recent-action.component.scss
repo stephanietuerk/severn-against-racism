@@ -103,5 +103,31 @@
     .displayed-item {
         width: 100%;
     }
+
+    .external-md-container {
+        @extend %external-markdown;
+        margin: 0.4em;
+        
+        p {
+            font-size: 0.7em;
+        }
+
+        ul > li > p,
+        ul > li > ul > li {
+            font-size: 1em;
+        }
+
+        ul > li {
+            font-size: 0.7em;
+        }
+
+        ul > li > ul > li:last-of-type {
+            margin-bottom: 0.8em;
+        }
+
+        ul:last-of-type > li:last-of-type {
+            margin-bottom: 0.8em;
+        }
+    }
 }
 

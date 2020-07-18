@@ -473,4 +473,18 @@ export const letters: Letter[] = [
       location: "chacos001.md",
     },
   },
+  {
+    id: "scsar003",
+    author: {
+      last: "SCSAR"
+    },
+    addressee: {
+      last: "Severn BoT and Doug Lagarde"
+    },
+    date: new Date("2020-07-16"),
+    content: {
+      type: "md",
+      location: "scsar003.md",
+    },
+  },
 ];
