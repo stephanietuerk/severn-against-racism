@@ -83,4 +83,17 @@ export const actions: Action[] = [
       type: "md",
     },
   },
+  {
+    id: "ssbaa-20200716",
+    date: new Date("2020-07-16"),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      'The newly-formed Severn School Black Alumni Association (SSBAA) sent a letter to Severn\'s Board of Trustees and Head of School Doug Lagarde requesting public recognition from the school, inclusion on the proposed DEI Committee, and engagement from the school to facilitate meaningful connection between SSBAA and current Black students.',
+    ],
+    image: {
+      text: "View SSBAA's letter",
+      path: "assets/letters/md/ssbaa001.md",
+      type: "md",
+    },
+  },
 ];

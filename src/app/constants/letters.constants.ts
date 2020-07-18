@@ -487,4 +487,18 @@ export const letters: Letter[] = [
       location: "scsar003.md",
     },
   },
+  {
+    id: "ssbaa001",
+    author: {
+      last: "SSBAA"
+    },
+    addressee: {
+      last: "Severn BoT and Doug Lagarde"
+    },
+    date: new Date("2020-07-16"),
+    content: {
+      type: "md",
+      location: "ssbaa001.md",
+    },
+  },
 ];
