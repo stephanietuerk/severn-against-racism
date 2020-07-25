@@ -1,0 +1,12 @@
+Dear Severn School Board Members,
+
+A reckoning of America's past present and future is upon us. Changes need to be made and it is truly the responsibility of White people to challenge racism wherever it arises. Predominantly White, affluent and influential spaces are exactly the places where these difficult conversations need to be had and where examining the existence of white supremacy needs to take place. Severn is one community amongst thousands in this country where being a person of color means having to live through glaring and subtle injustice on a daily basis.  
+
+Putting forth a plan to address systemic racism at the school is a great first step. I encourage the school to focus on key items to ensure that the merits of this plan can come to fruition and benefit BIPOC students and not cause harm. The right DEI person for Severn will be a person of color, preferably Black. Black and Brown kids need someone to feel safe with, and there are very few adults in a predominantly White environment that BIPOC students truly feel safe with. The DEI person must be connected to their allies, and at least two teachers who are true allies should be in place within each division (lower, middle, upper) of the school. And Severn School's administration should help the community realize that people of color do not feel safe or happy in predominantly White environments. Leadership on this will be crucial for its success.
+
+A lot of self reflection needs to take place in order to make any of this plan more than empty promises. All adults should be trained on culturally responsible communication so that harm is not done when the intentions are well intended. All adults should be trained on how to handle racist incidents, overt and covert. These are incredibly difficult dynamics to effectively navigate and guidance will be needed.
+
+Let’s see Severn make the structural change that is needed to move the needle of anti racism forward. Let’s see Severn School become a place where Black students and alumni can feel safe and nurtured, and not used for photo ops or optic leadership positions. Severn School has an opportunity to be on the right side of history and to engage in the most exciting and rewarding venture of all: personal and community growth through excellent education.
+
+Thank you,  
+Charlotte Byrd, Class of 1995

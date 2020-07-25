@@ -501,4 +501,19 @@ export const letters: Letter[] = [
       location: "ssbaa001.md",
     },
   },
+  {
+    id: 'byrd002',
+    author: {
+      last: "Byrd",
+      first: "Charlotte",
+    },
+    addressee: {
+      last: "Severn Board of Trustees"
+    },
+    date: new Date("2020-07-20"),
+    content: {
+      type: "md",
+      location: "byrd002.md",
+    },
+  }
 ];
