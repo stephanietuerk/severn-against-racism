@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { labels } from 'src/app/constants/labels.constants';
-import { ViewportScroller } from '@angular/common';
-import { Router, Scroll } from '@angular/router';
+import { ElementService } from 'src/app/core/services/element.service';
 
 @Component({
   selector: 'app-nav-panel',
@@ -11,15 +10,9 @@ import { Router, Scroll } from '@angular/router';
 export class NavPanelComponent implements OnInit {
   sections;
 
-  constructor() { }
+  constructor(public elementService: ElementService) { }
 
   ngOnInit() {
-    this.sections = labels.sections;
+    this.sections = Object.values(labels.sections);
   }
-
-  scroll(id: string) {
-    const element = document.getElementById(id);
-    element.scrollIntoView({ behavior: 'smooth'});
-  }
-
 }

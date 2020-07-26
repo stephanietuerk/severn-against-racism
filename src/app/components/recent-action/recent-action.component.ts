@@ -4,6 +4,7 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 import { SvgIconComponent } from 'src/app/core/svg-icon/svg-icon.component';
 import { HttpClient } from '@angular/common/http';
 import * as marked from 'marked';
+import { ElementService } from 'src/app/core/services/element.service';
 
 @Component({
     selector: 'app-recent-action',
@@ -15,7 +16,7 @@ export class RecentActionComponent implements OnInit {
     @Input() action: Action;
     displayItem = '';
 
-    constructor(private http: HttpClient, public formatService: FormatService) { }
+    constructor(private http: HttpClient, private elementService: ElementService, public formatService: FormatService) { }
 
     ngOnInit() {
         this.getDisplayItem();
@@ -25,15 +26,10 @@ export class RecentActionComponent implements OnInit {
         icon.checked = !icon.checked;
     }
 
-    copyLink() {
-        const tempInput = document.createElement('input');
-        tempInput.style.position = 'absolute'; 
-        tempInput.style.left = '-1000px'; 
-        tempInput.style.top = '-1000px';
-        tempInput.value = `severncommunityagainstracism.com/#${this.action.id}`;
-        document.body.appendChild(tempInput);
-        tempInput.select();
-        document.execCommand('copy');
+    copyLink(el: HTMLElement) {
+        const content = `severncommunityagainstracism.com/#${this.action.id}`;
+        this.elementService.copyToClipboard(content);
+        this.elementService.createAlert(el, 'link-copied-alert', 'link copied');
     }
 
     getDisplayItem() {

@@ -16,7 +16,7 @@ import { NavPanelComponent } from './components/nav-panel/nav-panel.component';
 import { RecentActionComponent } from './components/recent-action/recent-action.component';
 import { MediaItemComponent } from './components/media-item/media-item.component';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-
+import { SectionDirectoryComponent } from './components/section-directory/section-directory.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     MediaModalComponent,
     SafePipe,
     RecentActionComponent,
-    MediaItemComponent
+    MediaItemComponent,
+    SectionDirectoryComponent
   ],
   imports: [
     BrowserModule,

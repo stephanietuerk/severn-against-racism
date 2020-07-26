@@ -6,6 +6,8 @@ import { cloneDeep } from 'lodash';
 import { SortService } from 'src/app/core/services/sort.service';
 import { Media } from 'src/app/models/media.model';
 import { severnMedia, otherMedia } from 'src/app/constants/media.constants';
+import { labels } from 'src/app/constants/labels.constants';
+import { Section } from 'src/app/models/labels.model';
 
 @Component({
   selector: 'app-resources',
@@ -17,10 +19,12 @@ export class ResourcesComponent implements OnInit {
   letters: Letter[];
   severnMediaItems: Media[];
   otherMediaItems: Media[];
+  sections: Section[];
 
   constructor(public formatService: FormatService, private sortService: SortService) { }
 
   ngOnInit() {
+    this.sections = labels.sections.resources.subsections;
     this.letters = cloneDeep(letters);
     this.severnMediaItems = cloneDeep(severnMedia);
     this.otherMediaItems = cloneDeep(otherMedia);

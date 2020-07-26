@@ -10,6 +10,6 @@ export class AppComponent implements OnInit {
   sections;
 
   ngOnInit() {
-    this.sections = labels.sections;
+    this.sections = Object.values(labels.sections);
   }
 }

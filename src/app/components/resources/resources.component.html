@@ -1,6 +1,7 @@
 <div class="resources-container">
+  <app-section-directory [sections]="sections"></app-section-directory>
   <div class="correspondence-container">
-    <p class="section-subheader resources">Documentation</p>
+    <h3 class="section-subheader resources" [id]="sections[0].id">{{ sections[0].display }}</h3>
     <p class="section-description resources">Much of what shaped our understanding of the state of racial inequity at Severn exists in many inboxes. 
       We have created a central repository for these artifacts so that people can read what has been said and shared.
     </p>
@@ -35,7 +36,7 @@
   </div>
   <p class="section-description resources">If you have written a letter about issues of race at Severn and would like us to host it here, please contact us at <a class="mail-to-link" href="mailto:severnagainstracism.com">SevernAgainstRacism@gmail.com</a>.
   </p>
-  <p class="section-subheader resources">Media</p>
+  <h3 class="section-subheader resources" [id]="sections[1].id">{{ sections[1].display }}</h3>
   <div class="severn-media-container">
     <p class="tertiary-header">
       About Severn
