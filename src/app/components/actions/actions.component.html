@@ -1,22 +1,69 @@
-<p class="section-subheader actions">Recent</p>
-<p class="instruction-text actions">Click any link icon to copy that item's URL to your clipboard</p>
-<ng-container *ngFor="let action of actions">
-    <app-recent-action [action]="action"></app-recent-action>
-</ng-container>
-<p class="section-subheader actions">Our Formation</p>
-<p class="section-description actions">This group was formed in response to a letter that Head of School Doug Lagarde shared with the Severn Community on June 3, 2020. 
-    Sent at a time when American institutions from schools to corporations were communicating support for Black communities, condemning police brutality, and stating that 
-    Black Lives Matter, Mr. Lagarde's email did none of these things. That his letter mentioned issues of racial injustice only as an aside made many of us very concerned 
-    about the administration's commitment to Black students and to rooting out racism at the school.
-</p>
-<p class="section-description actions">
-    As we connected with others, we discovered we were not alone in wanting to see Severn take a strong stand against  racism as well as other types of discrimination. 
-    In response to Mr. Lagarde's letter, we wrote an open letter to the school that over 750 alumni, students, parents, and former faculty signed.
-</p>
-<p class="section-description actions">
-    Through the discussions that followed Mr. Lagarde's letter and our initial response to it, we have heard more and more stories about racist and bigoted incidents 
-    occurring at the school in recent years and how the administration failed to address them..  The administration’s inaction in the face of overt racism, homophobia, 
-    transphobia, classism, and religious discrimination  is motivating our continued work to ensure that Severn makes real and lasting changes to support its entire 
-    community. We acknowledge the steps Severn has committed to taking and we will know that its Black students matter when students and their families feel supported and 
-    protected.
-</p>
+<div class="action-component-container">
+    <app-section-directory [sections]="sections"></app-section-directory>
+    <h3 class="section-subheader actions" [id]="sections[0].id">{{ sections[0].display }}</h3>
+    <p class="section-description actions">
+        We are at a critical moment. The Board has made some important concessions to our community's demand for racial justice. 
+        However, we have yet to hear any response from them regarding the letters sent by Severn Community Standing Against Racism and the Severn 
+        School Black Alumni Association. We need to show them that we are <strong>still</strong> engaged because <strong>the work is just beginning</strong>.
+    </p>
+    <p class="section-description actions">
+        <strong>We need you</strong> to write to Mr. Lagarde and the Board of Trustees. You can email them at:
+    </p>
+    <ul class="contact-list">
+        <li class="contact-item">
+            <p class="contact-name">Doug Lagarde</p> 
+            <p class="contact-address">dlagarde@severnschool.com</p>
+        </li>
+        <li class="contact-item">
+            <p class="contact-name">Severn School Board of Trustees, c/o Jennifer Mann (Board Secretary)</p> 
+            <p class="contact-address">jlmann200@gmail.com</p>
+        </li>
+    </ul>
+    <p class="section-description actions">
+        Below is a template that you can use. Feel free to modify as you see fit, but our call to action will be strongest when we have many unified voices. 
+        Please cc: your letter to severnagainstracism@gmail.com if you would like it posted on our page.
+    </p>
+    <div class="template-display" (click)="toggleItem(icon)">
+        <div class="template-toggle-container">
+            <p class="template-toggle-label">View the letter template</p>
+            <div
+                role="button"
+                class="template-toggle-button"
+            >
+                <app-svg-icon
+                    #icon
+                    class="template-toggle-icon"
+                    [name]="!icon.checked ? 'circle-plus-outline' : 'circle-minus-outline'"
+                ></app-svg-icon>
+            </div>
+        </div>
+    </div>
+    <div class="template-display-container" id="displayed-item-container" *ngIf="icon.checked">
+        <div
+            [innerHtml]="letterTemplate | safe"
+            class='template-md-container'
+        ></div>
+    </div>
+    <h3 class="section-subheader actions" [id]="sections[1].id">{{ sections[1].display }}</h3>
+    <p class="instruction-text actions">Click any link icon to copy that item's URL to your clipboard</p>
+    <ng-container *ngFor="let action of actions">
+        <app-recent-action [action]="action"></app-recent-action>
+    </ng-container>
+    <h3 class="section-subheader actions" [id]="sections[2].id">{{ sections[2].display }}</h3>
+    <p class="section-description actions">This group was formed in response to a letter that Head of School Doug Lagarde shared with the Severn Community on June 3, 2020. 
+        Sent at a time when American institutions from schools to corporations were communicating support for Black communities, condemning police brutality, and stating that 
+        Black Lives Matter, Mr. Lagarde's email did none of these things. That his letter mentioned issues of racial injustice only as an aside made many of us very concerned 
+        about the administration's commitment to Black students and to rooting out racism at the school.
+    </p>
+    <p class="section-description actions">
+        As we connected with others, we discovered we were not alone in wanting to see Severn take a strong stand against  racism as well as other types of discrimination. 
+        In response to Mr. Lagarde's letter, we wrote an open letter to the school that over 750 alumni, students, parents, and former faculty signed.
+    </p>
+    <p class="section-description actions">
+        Through the discussions that followed Mr. Lagarde's letter and our initial response to it, we have heard more and more stories about racist and bigoted incidents 
+        occurring at the school in recent years and how the administration failed to address them..  The administration’s inaction in the face of overt racism, homophobia, 
+        transphobia, classism, and religious discrimination  is motivating our continued work to ensure that Severn makes real and lasting changes to support its entire 
+        community. We acknowledge the steps Severn has committed to taking and we will know that its Black students matter when students and their families feel supported and 
+        protected.
+    </p>
+</div>

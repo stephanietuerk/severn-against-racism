@@ -1,0 +1,9 @@
+<div class="directory">
+    <a 
+        *ngFor="let section of sections" 
+        class='directory-item'
+        (click)="elementService.scroll(section.id)"
+    >
+        {{ section.display }} &#8594;
+    </a>
+</div>

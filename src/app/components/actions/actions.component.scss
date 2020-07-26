@@ -1,27 +1,124 @@
 @import 'vars', 'placeholders';
 
-app-recent-action {
-    display: block;
-    
-    &:first-of-type {
-        margin-top: 0.4em;
+.action-component-container {
+    app-recent-action {
+        display: block;
+        
+        &:first-of-type {
+            margin-top: 0.4em;
+        }
+
+        &:not(:last-of-type) {
+            margin-bottom: 1.6em;
+        }
     }
 
-    &:not(:last-of-type) {
-        margin-bottom: 1.6em;
+    .instruction-text {
+        text-transform: uppercase;
+        font-size: 0.65em;
+        margin-bottom: 1.4em;
+        letter-spacing: 0.1em;
     }
-}
 
-.instruction-text {
-    text-transform: uppercase;
-    font-size: 0.65em;
-    margin-bottom: 1.4em;
-    letter-spacing: 0.1em;
-}
+    .section-subheader.actions {
+        margin-top: 2em;
+        &:nth-of-type(1) {
+            margin-top: 0;
+        }
+    }
 
-.section-subheader.actions {
-    margin-top: 2em;
-    &:nth-of-type(1) {
-        margin-top: 0;
+    .contact-list {
+        margin-bottom: 1.4em;
+    }
+
+    .contact-item {
+        margin-bottom: 0.3em;
+
+        .contact-name {
+            font-size: 0.65em;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: $font-weight-medium;
+            margin-bottom: 0.1em;
+        }
+
+        .contact-address {
+            font-size: 0.9em;
+        }
+    }
+
+    .template-display {
+        @extend %fx-column;
+        align-items: flex-start;
+
+        .template-toggle-container {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            margin: 0.6em 0 0.2em 0;
+
+            &:hover {
+                transition: 0.3s ease-out;
+                background: rgba($color-highlight, 0.7);
+            }
+        }
+
+        .template-toggle-label {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: $font-weight-medium;
+            letter-spacing: 0.12em;
+            line-height: 1.5em;
+        }
+
+        .template-toggle-button {
+            cursor: pointer;
+            flex-shrink: 0;
+            background: none;
+            border: 0;
+            padding: 0;
+            margin-left: 0.6em;
+        }
+        
+        .template-toggle-icon svg {
+            $size: calc(0.45em + 0.8vw);
+            vertical-align: middle;
+            fill: $color-dark;
+            height: $size;
+            width: $size;
+        }
+    }
+
+    .template-display-container {
+        overflow-y: auto;
+        max-height: 600px;
+        margin-bottom: 0.4em;
+    }
+
+    .template-md-container {
+        @extend %external-markdown;
+        margin: 0.4em;
+        
+        p {
+            font-size: 0.7em;
+        }
+
+        ul > li > p,
+        ul > li > ul > li {
+            font-size: 1em;
+        }
+
+        ul > li {
+            font-size: 0.7em;
+        }
+
+        ul > li > ul > li:last-of-type {
+            margin-bottom: 0.8em;
+        }
+
+        ul:last-of-type > li:last-of-type {
+            margin-bottom: 0.8em;
+        }
     }
 }

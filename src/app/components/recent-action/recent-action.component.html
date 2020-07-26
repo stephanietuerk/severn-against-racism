@@ -1,7 +1,7 @@
 <div class="recent-action-container" [id]="action.id">
-    <div class="date-row" (click)="copyLink()">
+    <div class="date-row">
         <p class="date-label">{{ formatService.date(action.date) }}</p>
-        <div class="copy-link-button" role="button">
+        <div class="copy-link-button" role="button" (click)="copyLink($event.target)">
             <app-svg-icon class="link-icon" name="link"></app-svg-icon>
         </div>
     </div>

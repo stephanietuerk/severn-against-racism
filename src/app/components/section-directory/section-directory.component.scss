@@ -1,0 +1,25 @@
+@import 'vars', 'placeholders';
+
+.directory {
+    @extend %fx-column;
+    margin-bottom: 1em;
+
+    .directory-item {
+        @extend %sans-serif-medium;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 0.7em;
+        letter-spacing: 0.1em;
+        width: fit-content;
+        
+        &:not(:first-child) {
+            margin-top: 0.3em;
+        }
+
+        &:hover {
+            transition: 0.3s ease-out;
+            background: rgba($color-highlight, 0.7);
+        }
+    }
+}
