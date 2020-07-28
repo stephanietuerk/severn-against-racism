@@ -101,7 +101,7 @@ export const actions: Action[] = [
     date: new Date("2020-07-27"),
     notes: [
       // tslint:disable-next-line:max-line-length
-      "The Capital-Gazette published an article in which a number of Black members of the Alumni Hall of Fame expressed frustration about the current racial climate at Severn.",
+      "The Capital-Gazette published an article in which Black Alumni Athletic Hall of Fame members expressed frustration and concern about the current racial climate at Severn.",
     ],
     link: {
       text: "Read the article on the Capital-Gazette's site",
