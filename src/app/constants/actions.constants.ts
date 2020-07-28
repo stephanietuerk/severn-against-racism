@@ -96,4 +96,22 @@ export const actions: Action[] = [
       type: "md",
     },
   },
+  {
+    id: "capital-20200727",
+    date: new Date("2020-07-27"),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      "The Capital-Gazette published an article in which Black Alumni Athletic Hall of Fame members expressed frustration and concern about the current racial climate at Severn.",
+    ],
+    link: {
+      text: "Read the article on the Capital-Gazette's site",
+      path:
+        "https://www.capitalgazette.com/education/ac-cn-severn-school-black-students-20200711-boudrkxxbja33photw4lhnmegq-story.html",
+    },
+    image: {
+      text: "View the article",
+      path: "assets/letters/png/capital002.png",
+      type: "img",
+    },
+  },
 ];

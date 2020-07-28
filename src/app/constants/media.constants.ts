@@ -26,7 +26,14 @@ export const severnMedia: Media[] = [
         title: 'Painful experiences of Black students at Severn School span generations',
         source: 'Capital Gazette',
         date: new Date('2020-07-11')
+    },
+    {
+        url: 'https://www.capitalgazette.com/sports/high-school/ac-cs-severn-school-former-black-athletes-column-20200727-mstef2prbje5ddarit3kh7vuc4-story.html',
+        title: 'Black Hall of Fame athletes frustrated with current racial climate at Severn School',
+        source: 'Capital Gazette',
+        date: new Date('2020-07-27')
     }
+
 ];
 
 export const otherMedia: Media[] = [
