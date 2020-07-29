@@ -1,6 +1,6 @@
 Dear Mr. Lagarde and Severn Board of Trustees,
 
-Thank you for hearing the hurt expressed by both current students and alumni, and for acknowledging that swift and decisive action is necessary during this time of racial reckoning. Your announcement last week is a good first step to addressing racism at Severn.
+Thank you for hearing the hurt expressed by both current students and alumni, and for acknowledging that swift and decisive action is necessary during this time of racial reckoning. Your proposed changes are is a good first step to addressing racism at Severn.
 
 But that’s what it is -- a first step.
 
