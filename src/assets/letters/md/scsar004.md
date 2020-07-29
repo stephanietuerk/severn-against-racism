@@ -2,7 +2,7 @@ Dear Mr. Lagarde and Severn Board of Trustees,
 
 Thank you for hearing the hurt expressed by both current students and alumni, and for acknowledging that swift and decisive action is necessary during this time of racial reckoning. Your proposed changes are is a good first step to addressing racism at Severn.
 
-But that’s what it is -- a first step.
+But that’s what they are -- a first step.
 
 I’m writing to support the additional recommendations made in the July 16th letters from the Severn School Black Alumni Association (SSBAA) and Severn Community Standing Against Racism (SCSAR). As you state, actions speak louder than words; and to that end, I’m calling on you to immediately, among other recommendations:
 
