@@ -515,5 +515,35 @@ export const letters: Letter[] = [
       type: "md",
       location: "byrd002.md",
     },
+  },
+  {
+    id: 'tice001',
+    author: {
+      last: "Tice",
+      first: "Julie",
+    },
+    addressee: {
+      last: "Severn BoT and Doug Lagarde"
+    },
+    date: new Date("2020-07-30"),
+    content: {
+      type: "md",
+      location: "tice001.md",
+    },
+  },
+  {
+    id: 'hayden001',
+    author: {
+      last: "Hayden",
+      first: "Meg",
+    },
+    addressee: {
+      last: "Severn BoT and Doug Lagarde"
+    },
+    date: new Date("2020-07-31"),
+    content: {
+      type: "md",
+      location: "hayden001.md",
+    },
   }
 ];
