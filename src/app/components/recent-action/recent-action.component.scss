@@ -8,6 +8,7 @@
     .date-row {
         display: flex;
         align-items: middle;
+        border-bottom: 1px solid $color-dark;
 
         .date-label {
             display: inline-flex;
