@@ -532,18 +532,31 @@ export const letters: Letter[] = [
     },
   },
   {
-    id: 'hayden001',
+    id: 'severn003',
     author: {
-      last: "Hayden",
-      first: "Meg",
+      last: "Severn BOT DEI Committee"
     },
     addressee: {
-      last: "Severn BoT and Doug Lagarde"
+      last: "Severn Community"
     },
-    date: new Date("2020-07-31"),
+    date: new Date("2020-08-27"),
     content: {
-      type: "md",
-      location: "hayden001.md",
+      type: "img",
+      location: "severn003.png",
+    },
+  },
+  {
+    id: 'severn003',
+    author: {
+      last: "Severn BOT DEI Committee"
+    },
+    addressee: {
+      last: "Severn Community"
+    },
+    date: new Date("2020-08-27"),
+    content: {
+      type: "img",
+      location: "severn004.png",
     },
   }
 ];
