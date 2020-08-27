@@ -114,4 +114,17 @@ export const actions: Action[] = [
       type: "img",
     },
   },
+  {
+    id: "severn-20200827",
+    date: new Date("2020-08-27"),
+    notes: [
+      // tslint:disable-next-line:max-line-length
+      "Severn's new Diversity, Equity, and Inclusion (DEI) Board Committee updated the Severn Community on its activities since its July formation.",
+    ],
+    image: {
+      text: "View the committee's letter",
+      path: "assets/letters/png/severn003.png",
+      type: "img",
+    },
+  },
 ];
