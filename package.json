@@ -27,7 +27,7 @@
     "d3-time-format": "^2.2.3",
     "express": "^4.17.1",
     "lodash": "^4.17.19",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "ng2-pdf-viewer": "^6.3.2",
     "rxjs": "~6.6.0",
     "tslib": "^1.10.0",
